@@ -63,12 +63,6 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         
 
     }
-    @IBAction func hahah() {
-        UIImageWriteToSavedPhotosAlbum(hyouziView.image!, nil, nil, nil)
-        UIImageWriteToSavedPhotosAlbum(imageView.image!, nil, nil, nil)
-
-
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
