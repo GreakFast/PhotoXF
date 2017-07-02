@@ -12,15 +12,62 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
     var imageNameArray: [String] = ["キラキラ", "hatena", "KIS", "kemuri", "honou", "電球", "ビックリマーク", "hibi", "雷", "頭悪い"]
     var imageIndex: Int = 0
     var imageView: UIImageView!
+        var pinchGesture = UIPinchGestureRecognizer()
+        let rotateGesture = UIRotationGestureRecognizer()
     
     var number: Int!
     @IBOutlet var hyouziView: UIImageView!
+    var transScale = CGAffineTransform()
+    var transTrans = CGAffineTransform()
+    var transRotate = CGAffineTransform()
+    var transMiller = CGAffineTransform()
+    
+    var counter = 0
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // set pinch gesture delegate
+        
+        self.pinchGesture.delegate = self as? UIGestureRecognizerDelegate
+        
+        
+        
+        // set pinch gesture target
+        
+        self.pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(NextViewController.pinchRecognized(_:)))
+        
+        
+        
+        // add pinch gesture recognizer to view
+        
+        self.view.addGestureRecognizer(self.pinchGesture)
+
+        
 
         // Do any additional setup after loading the view.
+        
+        self.rotateGesture.delegate = self as? UIGestureRecognizerDelegate
+        
+        
+        
+        // add rotate gesture target
+        
+        self.rotateGesture.addTarget(self, action: #selector(NextViewController.rotateView(_:)))
+        
+        
+        
+        // add rotate gesture within view
+        
+        self.view.addGestureRecognizer(rotateGesture)
+        
+
+    }
+    @IBAction func hahah() {
+        UIImageWriteToSavedPhotosAlbum(hyouziView.image!, nil, nil, nil)
+        UIImageWriteToSavedPhotosAlbum(imageView.image!, nil, nil, nil)
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +84,7 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         self.present(imagePickController, animated: true, completion: nil)
     }
     @IBAction func save() {
-        let rect:CGRect = CGRect(x: 0, y:  30, width: 375, height: 535)
+        let rect:CGRect = CGRect(x: 0, y:  0, width: 375, height: 377)
         UIGraphicsBeginImageContext(rect.size)
         self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let capture = UIGraphicsGetImageFromCurrentImageContext()
@@ -49,11 +96,55 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
     @IBAction func torikesi() {
         self.imageView.removeFromSuperview()
     }
-    
+    @IBAction func hanten() {
+        if (imageView == nil){
+            let alert: UIAlertController = UIAlertController(title: "エラー", message: "スタンプが選択されていません。スタンプを選択して下さい。", preferredStyle:  UIAlertControllerStyle.alert)
+            
+            // ② Actionの設定
+            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+            // OKボタン
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            alert.addAction(defaultAction)
+            
+            // ④ Alertを表示
+            present(alert, animated: true, completion: nil)
+            
 
-    @IBAction func backhome() {
-        self.dismiss(animated: true, completion: nil)
+        } else {
+        transMiller = CGAffineTransform(scaleX: -1, y: 1)
+        imageView.transform = transMiller
     }
+    }
+    @IBAction func modosuhanten() {
+        if (imageView == nil){
+            let alert: UIAlertController = UIAlertController(title: "エラー", message: "スタンプが選択されていません。スタンプを選択して下さい。", preferredStyle:  UIAlertControllerStyle.alert)
+            
+            // ② Actionの設定
+            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+            // OKボタン
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            alert.addAction(defaultAction)
+            
+            // ④ Alertを表示
+            present(alert, animated: true, completion: nil)
+            
+            
+        } else {
+            transMiller = CGAffineTransform(scaleX: 1, y: 1)
+            imageView.transform = transMiller
+        }
+    }
+
     @IBAction func star() {
         imageIndex = 1
     }
@@ -120,35 +211,46 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
             imageView.center = CGPoint(x: location.x ,y : location.y)
             //表示
             self.view.addSubview(imageView)
+            
+            imageIndex = 0
         }
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (imageView == nil){
+            let alert: UIAlertController = UIAlertController(title: "エラー", message: "スタンプが選択されていません。スタンプを選択して下さい。", preferredStyle:  UIAlertControllerStyle.alert)
+            
+            // ② Actionの設定
+            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+            // OKボタン
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            alert.addAction(defaultAction)
+            
+            // ④ Alertを表示
+            present(alert, animated: true, completion: nil)
+            
+            
+        } else {
+
+        // タッチイベントを取得
         let touchEvent = touches.first!
         
-
-        let preDx = touchEvent.previousLocation(in: self.view).x
-        let preDy = touchEvent.previousLocation(in: self.view).y
-        
+        // ドラッグ後の座標
         let newDx = touchEvent.location(in: self.view).x
         let newDy = touchEvent.location(in: self.view).y
         
-    
-        let dx = newDx - preDx
-        
-        
-        let dy = newDy - preDy
-        
-        
-        var viewFrame: CGRect = imageView.frame
-        
-        
-        viewFrame.origin.x += dx
-        viewFrame.origin.y += dy
-        
-        imageView.frame = viewFrame
-        
+        imageView.center = CGPoint(x: newDx ,y: newDy)
+
         self.view.addSubview(imageView)
-        
+    }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("タッチし終わったぜwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwはっはっはっハッッハッッハッハッッは")
     }
 
 
@@ -163,6 +265,73 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         self.dismiss(animated: true, completion: nil)
         
     }
+    func pinchRecognized(_ pinch: UIPinchGestureRecognizer) {
+        if (imageView == nil){
+            let alert: UIAlertController = UIAlertController(title: "ピンチエラー", message: "スタンプが選択されていません。スタンプを選択して下さい。", preferredStyle:  UIAlertControllerStyle.alert)
+            
+            // ② Actionの設定
+            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+            // OKボタン
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            alert.addAction(defaultAction)
+            
+            // ④ Alertを表示
+            present(alert, animated: true, completion: nil)
+            
+            
+        } else {
+
+        
+        
+        
+        // change view scale based on pinch
+        
+        self.imageView.transform = self.imageView.transform.scaledBy(x: pinch.scale, y: pinch.scale)
+        
+        pinch.scale = 1.0
+        
+    }
+    }
+    func rotateView(_ gesture: UIRotationGestureRecognizer) {
+        if (imageView == nil){
+            let alert: UIAlertController = UIAlertController(title: "ピンチエラー", message: "スタンプが選択されていません。スタンプを選択して下さい。", preferredStyle:  UIAlertControllerStyle.alert)
+            
+            // ② Actionの設定
+            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+            // OKボタン
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            alert.addAction(defaultAction)
+            
+            // ④ Alertを表示
+            present(alert, animated: true, completion: nil)
+            
+            
+        } else {
+
+        
+        self.imageView.transform = self.imageView.transform.rotated(by: gesture.rotation)
+        
+        gesture.rotation = 0.001
+    }
+    }
+    @IBAction func hahahahaaaaaa() {
+        let storyboard: UIStoryboard = self.storyboard!
+        let tree = storyboard.instantiateViewController(withIdentifier: "tree")
+        present(tree, animated: true, completion: nil)
+    }
+    
+    
+
     
 
 
@@ -179,3 +348,4 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
     */
 
 }
+

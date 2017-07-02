@@ -17,6 +17,8 @@
 		3B2AC0981EDA994E00B8E10B /* ビックリマーク.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AC0901EDA994E00B8E10B /* ビックリマーク.png */; };
 		3B2AC0991EDA994E00B8E10B /* 電球.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AC0911EDA994E00B8E10B /* 電球.png */; };
 		3B2AC09B1EDA996C00B8E10B /* ブラックスクリーン.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AC09A1EDA996C00B8E10B /* ブラックスクリーン.png */; };
+		3B47C26E1EFFA5E10072EC4D /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47C26D1EFFA5E10072EC4D /* CityViewController.swift */; };
+		3B47C2701EFFABC60072EC4D /* rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B47C26F1EFFABC60072EC4D /* rainbow.png */; };
 		3B4EE8E31EE2969E00AE42B1 /* 頭悪い.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EE8E11EE2969E00AE42B1 /* 頭悪い.png */; };
 		3B4EE8E41EE2969E00AE42B1 /* 雷.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EE8E21EE2969E00AE42B1 /* 雷.png */; };
 		3B6FC34D1ED8126D00F37963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FC34C1ED8126D00F37963 /* AppDelegate.swift */; };
@@ -60,6 +62,8 @@
 		3B2AC0901EDA994E00B8E10B /* ビックリマーク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ビックリマーク.png"; sourceTree = "<group>"; };
 		3B2AC0911EDA994E00B8E10B /* 電球.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "電球.png"; sourceTree = "<group>"; };
 		3B2AC09A1EDA996C00B8E10B /* ブラックスクリーン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ブラックスクリーン.png"; sourceTree = "<group>"; };
+		3B47C26D1EFFA5E10072EC4D /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		3B47C26F1EFFABC60072EC4D /* rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow.png; sourceTree = "<group>"; };
 		3B4EE8E11EE2969E00AE42B1 /* 頭悪い.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "頭悪い.png"; sourceTree = "<group>"; };
 		3B4EE8E21EE2969E00AE42B1 /* 雷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雷.png"; sourceTree = "<group>"; };
 		3B6FC3491ED8126D00F37963 /* PhotoXF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoXF.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +144,7 @@
 				3B4EE8E21EE2969E00AE42B1 /* 雷.png */,
 				3BBA187A1EDA953600500632 /* Button_ViewController.swift */,
 				3B9F55991EE26AA200D3B9A0 /* IMGA0004.png */,
+				3B47C26F1EFFABC60072EC4D /* rainbow.png */,
 				3BE480EF1EE24D11002620CB /* くるくるEX.png */,
 				3B2AC08A1EDA994E00B8E10B /* hatena.png */,
 				3B2AC08B1EDA994E00B8E10B /* hibi.png */,
@@ -151,6 +156,7 @@
 				3B2AC0901EDA994E00B8E10B /* ビックリマーク.png */,
 				3B2AC0911EDA994E00B8E10B /* 電球.png */,
 				3BE278791EDAC807008E31A9 /* NextViewController.swift */,
+				3B47C26D1EFFA5E10072EC4D /* CityViewController.swift */,
 			);
 			path = PhotoXF;
 			sourceTree = "<group>";
@@ -242,17 +248,20 @@
 					3B6FC3481ED8126D00F37963 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QCUSDZ23TE;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					3B6FC35C1ED8126E00F37963 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QCUSDZ23TE;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3B6FC3481ED8126D00F37963;
 					};
 					3B6FC3671ED8126E00F37963 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QCUSDZ23TE;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3B6FC3481ED8126D00F37963;
 					};
@@ -299,6 +308,7 @@
 				3B9F559A1EE26AA200D3B9A0 /* IMGA0004.png in Resources */,
 				3B6FC3521ED8126D00F37963 /* Main.storyboard in Resources */,
 				3B2AC0941EDA994E00B8E10B /* honou.png in Resources */,
+				3B47C2701EFFABC60072EC4D /* rainbow.png in Resources */,
 				3B2AC0931EDA994E00B8E10B /* hibi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B6FC34F1ED8126D00F37963 /* ViewController.swift in Sources */,
+				3B47C26E1EFFA5E10072EC4D /* CityViewController.swift in Sources */,
 				3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */,
 				3BBA187B1EDA953600500632 /* Button_ViewController.swift in Sources */,
 				3B6FC34D1ED8126D00F37963 /* AppDelegate.swift in Sources */,
