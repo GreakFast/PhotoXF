@@ -9,7 +9,7 @@
 import UIKit
 
 class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UINavigationControllerDelegate{
-    var imageNameArray: [String] = ["キラキラ", "hatena", "KIS", "kemuri", "honou", "電球", "ビックリマーク", "hibi", "雷", "頭悪い"]
+    var imageNameArray: [String] = ["キラキラ", "hatena", "KIS", "kemuri", "honou", "電球", "ビックリマーク", "hibi", "雷", "頭悪い", "Ha?image", "Yazirusi", "Thank_You!", "hukidasi", "sakurabana", "kibana", "星一つ", "ごめん", "sakura"]
     var imageIndex: Int = 0
     var imageView: UIImageView!
         var pinchGesture = UIPinchGestureRecognizer()
@@ -78,7 +78,7 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         self.present(imagePickController, animated: true, completion: nil)
     }
     @IBAction func save() {
-        let rect:CGRect = CGRect(x: 0, y:  0, width: 375, height: 377)
+        let rect:CGRect = CGRect(x: 0, y:  0, width: 374, height: 378)
         UIGraphicsBeginImageContext(rect.size)
         self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let capture = UIGraphicsGetImageFromCurrentImageContext()
@@ -169,6 +169,33 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
     @IBAction func atamawarui() {
         imageIndex = 10
     }
+    @IBAction func ha() {
+        imageIndex = 11
+    }
+    @IBAction func Yazirusi() {
+        imageIndex = 12
+    }
+    @IBAction func Thank() {
+        imageIndex = 13
+    }
+    @IBAction func hukidasi() {
+        imageIndex = 14
+    }
+    @IBAction func sakurabana() {
+        imageIndex = 15
+    }
+    @IBAction func kibana() {
+        imageIndex = 16
+    }
+    @IBAction func hosihitotu() {
+        imageIndex = 17
+    }
+    @IBAction func gomen() {
+        imageIndex = 18
+    }
+    @IBAction func sakura() {
+        imageIndex = 19
+    }
     @IBAction func saves() {
         sleep(2);
         let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
@@ -195,7 +222,7 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         let location: CGPoint = touch.location(in: self.view)
         if imageIndex != 0 {
             //正方形
-            imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+            imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 250, height: 200))
             
             //画像設定
             let image: UIImage = UIImage(named: imageNameArray[imageIndex - 1])!
@@ -229,18 +256,29 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
             
             
         } else {
-
-        // タッチイベントを取得
-        let touchEvent = touches.first!
-        
-        // ドラッグ後の座標
-        let newDx = touchEvent.location(in: self.view).x
-        let newDy = touchEvent.location(in: self.view).y
-        
-        imageView.center = CGPoint(x: newDx ,y: newDy)
-
-        self.view.addSubview(imageView)
-    }
+            let aTouch = touches.first!
+            
+            // 移動した先の座標を取得.
+            let location = aTouch.location(in: self.view)
+            
+            // 移動する前の座標を取得.
+            let prevLocation = aTouch.previousLocation(in: self.view)
+            
+            // CGRect生成.
+        var viewFrame: CGRect = imageView.frame
+            // ドラッグで移動したx, y距離をとる.
+            let deltaX: CGFloat = location.x - prevLocation.x
+            let deltaY: CGFloat = location.y - prevLocation.y
+            
+            // 移動した分の距離をmyFrameの座標にプラスする.
+            viewFrame.origin.x += deltaX
+            viewFrame.origin.y += deltaY
+            
+            // frameにmyFrameを追加.
+            imageView.frame = viewFrame
+            
+            self.view.addSubview(imageView)
+        }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
