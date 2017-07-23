@@ -78,7 +78,7 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         self.present(imagePickController, animated: true, completion: nil)
     }
     @IBAction func save() {
-        let rect:CGRect = CGRect(x: 0, y:  0, width: 374, height: 378)
+        let rect:CGRect = CGRect(x: 0, y:  0, width: 374, height: 338)
         UIGraphicsBeginImageContext(rect.size)
         self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let capture = UIGraphicsGetImageFromCurrentImageContext()
