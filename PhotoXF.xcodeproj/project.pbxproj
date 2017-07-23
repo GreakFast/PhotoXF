@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B05E1411F2465B9005ADCCD /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B05E1401F2465B9005ADCCD /* iPhone.png */; };
 		3B0D8D1E1EE3A6E90076BEA6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D8D1D1EE3A6E90076BEA6 /* icon.png */; };
 		3B22C6B51F0A38E0009FADAC /* ガラパゴス.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B22C69F1F0A38DF009FADAC /* ガラパゴス.jpg */; };
 		3B22C6B61F0A38E0009FADAC /* セピア.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B22C6A01F0A38DF009FADAC /* セピア.jpg */; };
@@ -84,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B05E1401F2465B9005ADCCD /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone.png; sourceTree = "<group>"; };
 		3B0D8D1D1EE3A6E90076BEA6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3B22C69F1F0A38DF009FADAC /* ガラパゴス.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ガラパゴス.jpg"; sourceTree = "<group>"; };
 		3B22C6A01F0A38DF009FADAC /* セピア.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "セピア.jpg"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				3B4EE8E21EE2969E00AE42B1 /* 雷.png */,
 				3BBA187A1EDA953600500632 /* Button_ViewController.swift */,
 				3B48D3711F0A3E9E00528087 /* Ha?image.png */,
+				3B05E1401F2465B9005ADCCD /* iPhone.png */,
 				3B48D3721F0A3E9E00528087 /* Yazirusi.png */,
 				3B48D3731F0A3E9E00528087 /* Thank_You!.png */,
 				3B48D3741F0A3E9E00528087 /* hukidasi.png */,
@@ -437,6 +440,7 @@
 				3B22C6C01F0A38E0009FADAC /* 色彩増加.jpg in Resources */,
 				3B48D3781F0A3E9E00528087 /* hukidasi.png in Resources */,
 				3B22C6C21F0A38E0009FADAC /* 真っ赤な絵.jpg in Resources */,
+				3B05E1411F2465B9005ADCCD /* iPhone.png in Resources */,
 				3B48D3751F0A3E9E00528087 /* Ha?image.png in Resources */,
 				3BC388AE1F0CDC80006C782C /* ごめん.png in Resources */,
 				3B48D3761F0A3E9E00528087 /* Yazirusi.png in Resources */,

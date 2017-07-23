@@ -9,7 +9,7 @@
 import UIKit
 
 class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UINavigationControllerDelegate{
-    var imageNameArray: [String] = ["キラキラ", "hatena", "KIS", "kemuri", "honou", "電球", "ビックリマーク", "hibi", "雷", "頭悪い", "Ha?image", "Yazirusi", "Thank_You!", "hukidasi", "sakurabana", "kibana", "星一つ", "ごめん", "sakura"]
+    var imageNameArray: [String] = ["キラキラ", "hatena", "KIS", "kemuri", "honou", "電球", "ビックリマーク", "hibi", "雷", "頭悪い", "Ha?image", "Yazirusi", "Thank_You!", "hukidasi", "sakurabana", "kibana", "星一つ", "ごめん", "sakura", "iPhone"]
     var imageIndex: Int = 0
     var imageView: UIImageView!
         var pinchGesture = UIPinchGestureRecognizer()
@@ -195,6 +195,9 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
     }
     @IBAction func sakura() {
         imageIndex = 19
+    }
+    @IBAction func iPhone() {
+        imageIndex = 20
     }
     @IBAction func saves() {
         sleep(2);
