@@ -48,7 +48,6 @@
 		3B48D3781F0A3E9E00528087 /* hukidasi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B48D3741F0A3E9E00528087 /* hukidasi.png */; };
 		3B4EE8E31EE2969E00AE42B1 /* 頭悪い.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EE8E11EE2969E00AE42B1 /* 頭悪い.png */; };
 		3B4EE8E41EE2969E00AE42B1 /* 雷.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EE8E21EE2969E00AE42B1 /* 雷.png */; };
-		3B594E191F318DF000ECDE2C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B594E181F318DF000ECDE2C /* icon.png */; };
 		3B6FC34D1ED8126D00F37963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FC34C1ED8126D00F37963 /* AppDelegate.swift */; };
 		3B6FC34F1ED8126D00F37963 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FC34E1ED8126D00F37963 /* ViewController.swift */; };
 		3B6FC3521ED8126D00F37963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6FC3501ED8126D00F37963 /* Main.storyboard */; };
@@ -126,7 +125,6 @@
 		3B48D3741F0A3E9E00528087 /* hukidasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hukidasi.png; sourceTree = "<group>"; };
 		3B4EE8E11EE2969E00AE42B1 /* 頭悪い.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "頭悪い.png"; sourceTree = "<group>"; };
 		3B4EE8E21EE2969E00AE42B1 /* 雷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雷.png"; sourceTree = "<group>"; };
-		3B594E181F318DF000ECDE2C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3B6FC3491ED8126D00F37963 /* PhotoXF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoXF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6FC34C1ED8126D00F37963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B6FC34E1ED8126D00F37963 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 		3B6FC3401ED8126D00F37963 = {
 			isa = PBXGroup;
 			children = (
-				3B594E181F318DF000ECDE2C /* icon.png */,
 				3B6FC34B1ED8126D00F37963 /* PhotoXF */,
 				3B6FC3601ED8126E00F37963 /* PhotoXFTests */,
 				3B6FC36B1ED8126E00F37963 /* PhotoXFUITests */,
@@ -440,7 +437,6 @@
 				3B22C6C01F0A38E0009FADAC /* 色彩増加.jpg in Resources */,
 				3B48D3781F0A3E9E00528087 /* hukidasi.png in Resources */,
 				3B22C6C21F0A38E0009FADAC /* 真っ赤な絵.jpg in Resources */,
-				3B594E191F318DF000ECDE2C /* icon.png in Resources */,
 				3B48D3751F0A3E9E00528087 /* Ha?image.png in Resources */,
 				3BC388AE1F0CDC80006C782C /* ごめん.png in Resources */,
 				3B48D3761F0A3E9E00528087 /* Yazirusi.png in Resources */,
