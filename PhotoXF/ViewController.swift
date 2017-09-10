@@ -31,7 +31,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         present(picker, animated: true, completion: nil)
     } else {
-    print("error")
+            let alert: UIAlertController = UIAlertController(title: "エラー", message: "エラー：カメラにアクセスができませんでした。", preferredStyle:  UIAlertControllerStyle.alert)
+            
+            // ② Actionの設定
+            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+            // OKボタン
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            alert.addAction(defaultAction)
+            
+            // ④ Alertを表示
+            present(alert, animated: true, completion: nil)
+            
     }
 }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

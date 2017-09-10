@@ -55,8 +55,10 @@
 		3B6FC3571ED8126E00F37963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6FC3551ED8126E00F37963 /* LaunchScreen.storyboard */; };
 		3B6FC3621ED8126E00F37963 /* PhotoXFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FC3611ED8126E00F37963 /* PhotoXFTests.swift */; };
 		3B6FC36D1ED8126E00F37963 /* PhotoXFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FC36C1ED8126E00F37963 /* PhotoXFUITests.swift */; };
+		3B7D5E631F5A8B38006779FD /* AKASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D5E621F5A8B38006779FD /* AKASViewController.swift */; };
 		3B9F559A1EE26AA200D3B9A0 /* IMGA0004.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F55991EE26AA200D3B9A0 /* IMGA0004.png */; };
 		3BBA187B1EDA953600500632 /* Button_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA187A1EDA953600500632 /* Button_ViewController.swift */; };
+		3BBACB8E1F488247004468B5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BBACB8D1F488247004468B5 /* icon.png */; };
 		3BC388A71F0CDC72006C782C /* sakurabana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC388A61F0CDC72006C782C /* sakurabana.png */; };
 		3BC388A91F0CDC77006C782C /* kibana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC388A81F0CDC77006C782C /* kibana.png */; };
 		3BC388AD1F0CDC80006C782C /* 星一つ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC388AA1F0CDC80006C782C /* 星一つ.png */; };
@@ -138,8 +140,10 @@
 		3B6FC3681ED8126E00F37963 /* PhotoXFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoXFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6FC36C1ED8126E00F37963 /* PhotoXFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoXFUITests.swift; sourceTree = "<group>"; };
 		3B6FC36E1ED8126E00F37963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7D5E621F5A8B38006779FD /* AKASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKASViewController.swift; sourceTree = "<group>"; };
 		3B9F55991EE26AA200D3B9A0 /* IMGA0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMGA0004.png; sourceTree = "<group>"; };
 		3BBA187A1EDA953600500632 /* Button_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button_ViewController.swift; sourceTree = "<group>"; };
+		3BBACB8D1F488247004468B5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3BC388A61F0CDC72006C782C /* sakurabana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sakurabana.png; sourceTree = "<group>"; };
 		3BC388A81F0CDC77006C782C /* kibana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kibana.png; sourceTree = "<group>"; };
 		3BC388AA1F0CDC80006C782C /* 星一つ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星一つ.png"; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 		3B6FC3401ED8126D00F37963 = {
 			isa = PBXGroup;
 			children = (
+				3BBACB8D1F488247004468B5 /* icon.png */,
 				3B6FC34B1ED8126D00F37963 /* PhotoXF */,
 				3B6FC3601ED8126E00F37963 /* PhotoXFTests */,
 				3B6FC36B1ED8126E00F37963 /* PhotoXFUITests */,
@@ -261,6 +266,7 @@
 				3B2AC0911EDA994E00B8E10B /* 電球.png */,
 				3BE278791EDAC807008E31A9 /* NextViewController.swift */,
 				3B47C26D1EFFA5E10072EC4D /* CityViewController.swift */,
+				3B7D5E621F5A8B38006779FD /* AKASViewController.swift */,
 			);
 			path = PhotoXF;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 				3B22C6C91F0A38E0009FADAC /* 明るい.jpg in Resources */,
 				3B2AC0921EDA994E00B8E10B /* hatena.png in Resources */,
 				3B2AC0981EDA994E00B8E10B /* ビックリマーク.png in Resources */,
+				3BBACB8E1F488247004468B5 /* icon.png in Resources */,
 				3B6FC3541ED8126E00F37963 /* Assets.xcassets in Resources */,
 				3B36E3211F248417008F8DA6 /* ImagePicture.png in Resources */,
 				3B9F559A1EE26AA200D3B9A0 /* IMGA0004.png in Resources */,
@@ -470,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7D5E631F5A8B38006779FD /* AKASViewController.swift in Sources */,
 				3B6FC34F1ED8126D00F37963 /* ViewController.swift in Sources */,
 				3B47C26E1EFFA5E10072EC4D /* CityViewController.swift in Sources */,
 				3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */,
