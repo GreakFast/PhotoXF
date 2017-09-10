@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="HZh-ch-ggp">
             <objects>
-                <viewController id="IWi-ax-dhr" customClass="ViewController" customModule="PhotoXF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Kbs" id="IWi-ax-dhr" customClass="SKViewController" customModule="PhotoXF" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9TD-2A-Rl1"/>
                         <viewControllerLayoutGuide type="bottom" id="Z1h-GG-qYK"/>
@@ -21,37 +21,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-lf-vZa">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oco-nu-Vj5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="1" green="0.44042007723796917" blue="0.673923723628433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-lf-vZa">
+                                <rect key="frame" x="72" y="218" width="230" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="aajs.png"/>
                                 <connections>
                                     <action selector="openAlbum" destination="IWi-ax-dhr" eventType="touchUpInside" id="esG-EK-txT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxD-4P-JZa">
-                                <rect key="frame" x="164" y="50" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxD-4P-JZa">
+                                <rect key="frame" x="72" y="0.0" width="230" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="CamSD.png"/>
                                 <connections>
-                                    <action selector="serect" destination="IWi-ax-dhr" eventType="touchUpInside" id="kao-S3-LIL"/>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="R1O-Am-RaW"/>
+                                    <action selector="takePhoto" destination="IWi-ax-dhr" eventType="touchUpInside" id="Y4T-DL-6Zs"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-WL-2qk">
-                                <rect key="frame" x="67" y="436" width="240" height="128"/>
+                                <rect key="frame" x="41" y="447" width="292" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67840616136084519" green="0.94159745727474897" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v7-5M-Tgm">
+                                <rect key="frame" x="255" y="596" width="66" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.51140923370609803" blue="0.68532706516058006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.19512964232195062" green="1" blue="0.16282501984112452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Tested" destination="IWi-ax-dhr" eventType="touchUpInside" id="DVD-9q-R1P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="cameraImageView" destination="4nG-WL-2qk" id="l4z-hN-019"/>
+                        <outlet property="cameraImageView" destination="4nG-WL-2qk" id="9K7-Ot-x3O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0a-er-yTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-873" y="36"/>
+            <point key="canvasLocation" x="-874.39999999999998" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -66,59 +83,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dra-X5-eHm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="331"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xio-94-K22">
-                                <rect key="frame" x="0.0" y="326" width="375" height="341"/>
+                                <rect key="frame" x="0.0" y="337" width="375" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGq-uN-2VS" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="117" y="389" width="89" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Take Photo">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="takePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ka0-8L-29P"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUM-Lf-zDT" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="150" y="339" width="50" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="share">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="snsPhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="uoI-dq-qvA"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfK-pa-Agc" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="145" y="475" width="90" height="35"/>
+                                <rect key="frame" x="144" y="394" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="色彩増加.jpg">
@@ -137,7 +112,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r51-zh-Hth" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="79" y="475" width="90" height="35"/>
+                                <rect key="frame" x="78" y="394" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="明るい.jpg">
@@ -153,7 +128,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-0P-A1M" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="209" y="604" width="90" height="35"/>
+                                <rect key="frame" x="208" y="523" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="暗い.jpg">
@@ -169,7 +144,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-On-nq2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="79" y="561" width="90" height="35"/>
+                                <rect key="frame" x="78" y="480" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="幻覚.jpg">
@@ -185,7 +160,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-2V-6ge" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="209" y="472" width="90" height="35"/>
+                                <rect key="frame" x="208" y="391" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="白黒.jpg">
@@ -204,7 +179,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-Fs-09a" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="79" y="516" width="90" height="35"/>
+                                <rect key="frame" x="78" y="435" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="セピア.jpg">
@@ -239,7 +214,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV6-Qn-NXz" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="272" y="561" width="90" height="35"/>
+                                <rect key="frame" x="271" y="480" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="反転.jpg">
@@ -255,7 +230,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN7-Vf-f7z" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="13" y="604" width="90" height="35"/>
+                                <rect key="frame" x="13" y="523" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="偽色.jpg">
@@ -271,7 +246,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R10-fp-Kcs" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="272" y="473" width="90" height="35"/>
+                                <rect key="frame" x="271" y="392" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="液晶破損.jpg">
@@ -287,7 +262,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-Ri-0bO" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="13" y="561" width="90" height="35"/>
+                                <rect key="frame" x="13" y="480" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="真っ赤な絵.jpg">
@@ -302,30 +277,8 @@
                                     <action selector="cvb" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ7-Fh-sWy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPw-UT-5wh" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="272" y="389" width="90" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Initialize Filter">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="ImageBack" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cjr-HJ-xRN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJC-nS-zx7" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="13" y="516" width="90" height="35"/>
+                                <rect key="frame" x="13" y="435" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="ピンク色.jpg">
@@ -341,7 +294,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-hw-yLa" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="145" y="561" width="90" height="35"/>
+                                <rect key="frame" x="144" y="480" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="黄緑色.jpg">
@@ -357,7 +310,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtd-bD-BU2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="145" y="604" width="90" height="35"/>
+                                <rect key="frame" x="144" y="523" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="青色.jpg">
@@ -373,7 +326,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B45-MX-OPI" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="145" y="516" width="90" height="35"/>
+                                <rect key="frame" x="144" y="435" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="赤色.jpg">
@@ -389,7 +342,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-4X-sm2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="272" y="604" width="90" height="35"/>
+                                <rect key="frame" x="271" y="523" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="ブラー.jpg">
@@ -405,7 +358,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAF-W8-2Yn" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="79" y="604" width="90" height="35"/>
+                                <rect key="frame" x="78" y="523" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="緑反転.jpg">
@@ -421,7 +374,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-Xw-hjP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="272" y="516" width="90" height="35"/>
+                                <rect key="frame" x="271" y="435" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="素朴.jpg">
@@ -437,7 +390,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoG-oZ-1DX" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="13" y="475" width="90" height="35"/>
+                                <rect key="frame" x="13" y="394" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="黄金.jpg">
@@ -453,7 +406,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-iz-CuE" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="209" y="561" width="90" height="35"/>
+                                <rect key="frame" x="208" y="480" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="暑い場所.jpg">
@@ -469,7 +422,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27o-qN-GKP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="209" y="518" width="90" height="35"/>
+                                <rect key="frame" x="208" y="437" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="ガラパゴス.jpg">
@@ -484,29 +437,8 @@
                                     <action selector="exz" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTd-cN-tVf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-ll-BXD" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="214" y="389" width="50" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Seve">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="savePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="7c6-fC-YFe"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcZ-zt-A8u" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="13" y="432" width="90" height="35"/>
+                                <rect key="frame" x="13" y="351" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                 <state key="normal" image="白黒反転.jpg">
@@ -522,54 +454,50 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-0.5" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="UfL-qJ-5MA">
-                                <rect key="frame" x="95" y="434" width="246" height="31"/>
+                                <rect key="frame" x="94" y="353" width="246" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="SK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taJ-dG-4Jz"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lML-cU-H81" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="19" y="389" width="90" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ6-tf-gkA">
+                                <rect key="frame" x="16" y="12" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="Stamp Window">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <state key="normal" image="1179.png"/>
                                 <connections>
-                                    <action selector="Kaaa" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLP-q1-m2m"/>
+                                    <action selector="NextView" destination="BYZ-38-t0r" eventType="touchUpInside" id="tad-C4-kwc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOa-OH-sMO" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="19" y="339" width="123" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-yD-d41">
+                                <rect key="frame" x="16" y="601" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Open the Library">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="Button" image="LAL.png"/>
                                 <connections>
-                                    <action selector="openAlbum" destination="BYZ-38-t0r" eventType="touchUpInside" id="QAq-Ok-x1A"/>
+                                    <action selector="snsPhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTp-nS-Ffm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlV-tb-TO6">
+                                <rect key="frame" x="124" y="601" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="images.png"/>
+                                <connections>
+                                    <action selector="ImageBack" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7B-72-R5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP3-H1-EsU">
+                                <rect key="frame" x="208" y="595" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="c7f06ee3.png"/>
+                                <connections>
+                                    <action selector="Kaaa" destination="BYZ-38-t0r" eventType="touchUpInside" id="2lv-XN-537"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py3-7t-kT6">
+                                <rect key="frame" x="302" y="596" width="57" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Copy.png"/>
+                                <connections>
+                                    <action selector="savePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="l81-YQ-1YF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -623,24 +551,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHB-KH-fea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940" y="37.331334332833585"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="sSc-0r-KC0">
-            <objects>
-                <viewController id="oLS-go-0Wf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Wyf-gG-p1A"/>
-                        <viewControllerLayoutGuide type="bottom" id="nzf-6H-TK9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9OO-yp-2hh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h4d-7i-fOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="940" y="806"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="qs3-JK-MnH">
@@ -723,11 +633,10 @@
                                     <action selector="dennki" destination="edj-u9-5aS" eventType="touchUpInside" id="acS-px-PSl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ul-TT-KnN" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="1" y="635" width="39" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ul-TT-KnN">
+                                <rect key="frame" x="16" y="615" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="Seve">
+                                <state key="normal" title="Seve" image="Copy.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -744,28 +653,6 @@
                                 <connections>
                                     <action selector="save" destination="edj-u9-5aS" eventType="touchUpInside" id="rUS-D3-3Bq"/>
                                     <action selector="saves" destination="edj-u9-5aS" eventType="touchUpInside" id="hz8-Ai-n6N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-5o-HtP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="48" y="635" width="60" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="6"/>
-                                <state key="normal" title="Open the Library">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="selectBackground" destination="edj-u9-5aS" eventType="touchUpInside" id="N9z-aq-Pvx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irA-7w-JJB" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -949,6 +836,27 @@
                                     <action selector="hosihitotu" destination="edj-u9-5aS" eventType="touchUpInside" id="4hH-jF-nQn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-5o-HtP">
+                                <rect key="frame" x="63" y="615" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open the Library" image="aajs.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.46378580729166669" green="0.80213216145833333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectBackground" destination="edj-u9-5aS" eventType="touchUpInside" id="N9z-aq-Pvx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -962,15 +870,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1179.png" width="256" height="256"/>
+        <image name="CamSD.png" width="500" height="500"/>
+        <image name="Copy.png" width="500" height="500"/>
         <image name="Ha?image.png" width="1024" height="768"/>
         <image name="ImagePicture.png" width="1024" height="768"/>
         <image name="KIS.png" width="2000" height="2000"/>
+        <image name="LAL.png" width="500" height="500"/>
         <image name="Thank_You!.png" width="744" height="768"/>
         <image name="Yazirusi.png" width="1024" height="768"/>
+        <image name="aajs.png" width="500" height="500"/>
+        <image name="c7f06ee3.png" width="500" height="500"/>
         <image name="hatena.png" width="2000" height="2000"/>
         <image name="hibi.png" width="2000" height="2000"/>
         <image name="honou.png" width="2000" height="2000"/>
         <image name="hukidasi.png" width="1024" height="768"/>
+        <image name="images.png" width="183" height="183"/>
         <image name="kemuri.png" width="2000" height="2000"/>
         <image name="kibana.png" width="4224" height="2376"/>
         <image name="rainbow.png" width="286" height="263"/>
