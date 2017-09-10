@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IWi-ax-dhr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="HZh-ch-ggp">
+            <objects>
+                <viewController id="IWi-ax-dhr" customClass="ViewController" customModule="PhotoXF" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9TD-2A-Rl1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z1h-GG-qYK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aGc-eY-AEN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-lf-vZa">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="openAlbum" destination="IWi-ax-dhr" eventType="touchUpInside" id="esG-EK-txT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxD-4P-JZa">
+                                <rect key="frame" x="164" y="50" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="serect" destination="IWi-ax-dhr" eventType="touchUpInside" id="kao-S3-LIL"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="R1O-Am-RaW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-WL-2qk">
+                                <rect key="frame" x="67" y="436" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraImageView" destination="4nG-WL-2qk" id="l4z-hN-019"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0a-er-yTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-873" y="36"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -440,10 +484,6 @@
                                     <action selector="exz" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTd-cN-tVf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="くるくるEX.png" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-zi-9mS">
-                                <rect key="frame" x="229" y="350" width="21" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-ll-BXD" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
                                 <rect key="frame" x="214" y="389" width="50" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -537,7 +577,6 @@
                     </view>
                     <connections>
                         <outlet property="cameraImageView" destination="Dra-X5-eHm" id="g8V-ti-HVd"/>
-                        <outlet property="kurukuruImageView" destination="7J7-zi-9mS" id="cyl-G7-ZxO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -937,7 +976,6 @@
         <image name="rainbow.png" width="286" height="263"/>
         <image name="sakura.png" width="4224" height="2376"/>
         <image name="sakurabana.png" width="4224" height="2376"/>
-        <image name="くるくるEX.png" width="36" height="36"/>
         <image name="ごめん.png" width="1024" height="768"/>
         <image name="ガラパゴス.jpg" width="50" height="50"/>
         <image name="キラキラ.png" width="2000" height="2000"/>

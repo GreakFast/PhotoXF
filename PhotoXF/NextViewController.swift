@@ -23,6 +23,7 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
     var transMiller = CGAffineTransform()
     
     var counter = 0
+    let saveData: UserDefaults = UserDefaults.standard
 
 
     override func viewDidLoad() {

@@ -11,6 +11,7 @@ import UIKit
 class CityViewController: UIViewController {
     
     @IBOutlet var DiffelentImageView: UIImageView!
+    let saveData: UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()

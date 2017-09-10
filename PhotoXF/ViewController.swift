@@ -17,10 +17,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet var cameraImageView: UIImageView!
     var originalImage: UIImage!
     var filter: CIFilter!
+    let saveData: UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        cameraImageView.image = originalImage
     }
     @IBAction func takePhoto() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -73,6 +75,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         present(alert, animated: true, completion: nil)
         
 
+    }
+    @IBAction func serect () {
+        UserDefaults.standard.set(UIImagePNGRepresentation(originalImage), forKey: "AS")
+        let imageDate:NSData = UserDefaults.standard.object(forKey: "AS") as! NSData
+        originalImage = UIImage(data:imageDate as Data)
+        
     }
     @IBAction func colorFilter() {
         if (originalImage == nil){
@@ -915,15 +923,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         nextView.performSegue(withIdentifier: "ahiru", sender: nil)
 
     }
-    override func viewDidAppear(_ animated: Bool) {
-        let animation = CABasicAnimation(keyPath: "transform")
-        animation.fromValue = 0
-        animation.toValue = 2 * M_PI
-        animation.valueFunction = CAValueFunction(name: kCAValueFunctionRotateZ)
-        animation.duration = 0.4
-        animation.repeatCount = Float.infinity
-        kurukuruImageView.layer.add(animation, forKey: nil)
-    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
