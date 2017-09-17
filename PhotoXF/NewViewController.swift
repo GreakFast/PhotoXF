@@ -46,7 +46,9 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
 
     }
     @IBAction func sns() {
-        UIGraphicsBeginImageContextWithOptions(self.view.frame.size, self.view.isOpaque, 0.0)
+        let rect:CGRect = CGRect(x: 0, y:  0, width: 375, height: 573)
+
+        UIGraphicsBeginImageContextWithOptions(rect.size, self.view.isOpaque, 0.0)
         self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let savedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
