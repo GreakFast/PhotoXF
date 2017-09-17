@@ -26,9 +26,17 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="0.44042007723796917" blue="0.673923723628433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-lf-vZa">
+                                <rect key="frame" x="92" y="217" width="190" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="aajs.png"/>
+                                <connections>
+                                    <action selector="openAlbum" destination="IWi-ax-dhr" eventType="touchUpInside" id="esG-EK-txT"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxD-4P-JZa">
                                 <rect key="frame" x="245" y="79" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="CamSD.png"/>
                                 <connections>
                                     <action selector="takePhoto" destination="IWi-ax-dhr" eventType="touchUpInside" id="Y4T-DL-6Zs"/>
@@ -51,12 +59,12 @@
                                     <action selector="Tested" destination="IWi-ax-dhr" eventType="touchUpInside" id="DVD-9q-R1P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-lf-vZa">
-                                <rect key="frame" x="92" y="217" width="190" height="190"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="aajs.png"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDV-Ce-mTE">
+                                <rect key="frame" x="16" y="79" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="c7f06ee3.png"/>
                                 <connections>
-                                    <action selector="openAlbum" destination="IWi-ax-dhr" eventType="touchUpInside" id="esG-EK-txT"/>
+                                    <segue destination="bnq-8d-Gqx" kind="modal" id="5u6-3W-OoQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -567,7 +575,7 @@
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.1962724666371749" blue="0.19631909539549394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHn-kG-2qT">
-                                <rect key="frame" x="16" y="581" width="78" height="78"/>
+                                <rect key="frame" x="77" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Button" image="aajs.png"/>
                                 <connections>
@@ -575,7 +583,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIo-gW-zRz">
-                                <rect key="frame" x="188" y="581" width="78" height="78"/>
+                                <rect key="frame" x="231" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Button" image="DNS.png"/>
                                 <connections>
@@ -583,7 +591,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVQ-s3-O9r">
-                                <rect key="frame" x="102" y="581" width="78" height="78"/>
+                                <rect key="frame" x="153" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Button" image="c7f06ee3.png"/>
                                 <connections>
@@ -591,7 +599,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGN-2G-Y2F">
-                                <rect key="frame" x="274" y="583" width="73" height="73"/>
+                                <rect key="frame" x="307" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Button" image="Copy.png"/>
                                 <connections>
@@ -603,6 +611,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWH-J7-YIk">
+                                <rect key="frame" x="16" y="594" width="53" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="1179.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -612,7 +625,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmR-Z9-x45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="721.88905547226398"/>
+            <point key="canvasLocation" x="-874.39999999999998" y="825.33733133433293"/>
         </scene>
         <!--Stamp View Controller-->
         <scene sceneID="X7k-9R-cLC">
@@ -661,7 +674,7 @@
                                 <rect key="frame" x="155" y="617" width="65" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.64478742074381079" blue="0.90091945570542475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.026313179591218816" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -674,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qs-q8-nCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1724" y="723.68815592203907"/>
+            <point key="canvasLocation" x="33" y="825"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="qs3-JK-MnH">
