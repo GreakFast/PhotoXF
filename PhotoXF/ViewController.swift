@@ -12,9 +12,11 @@ import Accounts
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    
     @IBOutlet var kurukuruImageView: UIImageView!
     
     @IBOutlet var cameraImageView: UIImageView!
+    @IBOutlet var Defo: UIImageView!
     var data = NSData()
     var originalImage: UIImage!
     var filter: CIFilter!
