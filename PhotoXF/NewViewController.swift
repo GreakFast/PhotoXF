@@ -10,7 +10,7 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
             delegate.isStampAdded = false
             
             let stamp = Stamp()
-            let stampSize:CGFloat = 140
+            let stampSize:CGFloat = 200
             stamp.frame = CGRect(x: 0, y: 0, width: stampSize, height: stampSize)
             stamp.center = self.view.center
             stamp.contentMode = .scaleAspectFit
@@ -41,12 +41,27 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         self.dismiss(animated: true, completion: nil)
         
     }
+    @IBAction func Back() {
+        self.dismiss(animated: true, completion: nil)
+
+    }
     @IBAction func sns() {
         UIGraphicsBeginImageContextWithOptions(self.view.frame.size, self.view.isOpaque, 0.0)
         self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let savedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
         UIImageWriteToSavedPhotosAlbum(savedImage!, self, nil, nil)
+        
+        let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
+        
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("OK")
+        })
+        alert.addAction(defaultAction)
+        
+        present(alert, animated: true, completion: nil)
+
     }
     @IBAction func deleteTapped(_ sender:AnyObject) {
         let subView = self.view.subviews.last!

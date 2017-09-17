@@ -615,6 +615,9 @@
                                 <rect key="frame" x="16" y="594" width="53" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="1179.png"/>
+                                <connections>
+                                    <action selector="Back" destination="bnq-8d-Gqx" eventType="touchUpInside" id="VoM-Fg-qpv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

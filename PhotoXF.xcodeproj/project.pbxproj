@@ -9,6 +9,36 @@
 /* Begin PBXBuildFile section */
 		3B08CC751F64FF2300B2FFAD /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B08CC741F64FF2300B2FFAD /* Copy.png */; };
 		3B08CC771F6500DB00B2FFAD /* LAL.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B08CC761F6500DB00B2FFAD /* LAL.png */; };
+		3B19C6E41F6E781600E6C8B1 /* ターゲット2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6C61F6E781600E6C8B1 /* ターゲット2.png */; };
+		3B19C6E51F6E781600E6C8B1 /* ターゲット3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6C71F6E781600E6C8B1 /* ターゲット3.png */; };
+		3B19C6E61F6E781600E6C8B1 /* 思い出し1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6C81F6E781600E6C8B1 /* 思い出し1.png */; };
+		3B19C6E71F6E781600E6C8B1 /* 禁止3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6C91F6E781600E6C8B1 /* 禁止3.png */; };
+		3B19C6E81F6E781600E6C8B1 /* OK2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6CA1F6E781600E6C8B1 /* OK2.png */; };
+		3B19C6E91F6E781600E6C8B1 /* 思い出し2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6CB1F6E781600E6C8B1 /* 思い出し2.png */; };
+		3B19C6EA1F6E781600E6C8B1 /* 音符2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6CC1F6E781600E6C8B1 /* 音符2.png */; };
+		3B19C6EB1F6E781600E6C8B1 /* 音符3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6CD1F6E781600E6C8B1 /* 音符3.png */; };
+		3B19C6EC1F6E781600E6C8B1 /* 音符4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6CE1F6E781600E6C8B1 /* 音符4.png */; };
+		3B19C6ED1F6E781600E6C8B1 /* はさみ1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6CF1F6E781600E6C8B1 /* はさみ1.png */; };
+		3B19C6EE1F6E781600E6C8B1 /* メールボックス3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D01F6E781600E6C8B1 /* メールボックス3.png */; };
+		3B19C6EF1F6E781600E6C8B1 /* メールボックス4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D11F6E781600E6C8B1 /* メールボックス4.png */; };
+		3B19C6F01F6E781600E6C8B1 /* リサイクルしよう.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D21F6E781600E6C8B1 /* リサイクルしよう.png */; };
+		3B19C6F11F6E781600E6C8B1 /* 音符5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D31F6E781600E6C8B1 /* 音符5.png */; };
+		3B19C6F21F6E781600E6C8B1 /* カーソル1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D41F6E781600E6C8B1 /* カーソル1.png */; };
+		3B19C6F31F6E781600E6C8B1 /* カーソル2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D51F6E781600E6C8B1 /* カーソル2.png */; };
+		3B19C6F41F6E781600E6C8B1 /* 傘1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D61F6E781600E6C8B1 /* 傘1.png */; };
+		3B19C6F51F6E781600E6C8B1 /* 傘2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D71F6E781600E6C8B1 /* 傘2.png */; };
+		3B19C6F61F6E781600E6C8B1 /* 傘3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D81F6E781600E6C8B1 /* 傘3.png */; };
+		3B19C6F71F6E781600E6C8B1 /* 傘4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6D91F6E781600E6C8B1 /* 傘4.png */; };
+		3B19C6F81F6E781600E6C8B1 /* OK21.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6DA1F6E781600E6C8B1 /* OK21.png */; };
+		3B19C6F91F6E781600E6C8B1 /* カーソル3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6DB1F6E781600E6C8B1 /* カーソル3.png */; };
+		3B19C6FA1F6E781600E6C8B1 /* はさみ2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6DC1F6E781600E6C8B1 /* はさみ2.png */; };
+		3B19C6FB1F6E781600E6C8B1 /* メールボックス1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6DD1F6E781600E6C8B1 /* メールボックス1.png */; };
+		3B19C6FC1F6E781600E6C8B1 /* 禁止1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6DE1F6E781600E6C8B1 /* 禁止1.png */; };
+		3B19C6FD1F6E781600E6C8B1 /* OK3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6DF1F6E781600E6C8B1 /* OK3.png */; };
+		3B19C6FE1F6E781600E6C8B1 /* ターゲット1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6E01F6E781600E6C8B1 /* ターゲット1.png */; };
+		3B19C6FF1F6E781600E6C8B1 /* メールボックス2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6E11F6E781600E6C8B1 /* メールボックス2.png */; };
+		3B19C7001F6E781600E6C8B1 /* 音符1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6E21F6E781600E6C8B1 /* 音符1.png */; };
+		3B19C7011F6E781600E6C8B1 /* 禁止2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6E31F6E781600E6C8B1 /* 禁止2.png */; };
 		3B1EA2401F6DD6CA0076A832 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EA23F1F6DD6CA0076A832 /* StampViewController.swift */; };
 		3B1EA2421F6DFD700076A832 /* StampTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EA2411F6DFD700076A832 /* StampTeste.swift */; };
 		3B22C6B51F0A38E0009FADAC /* ガラパゴス.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B22C69F1F0A38DF009FADAC /* ガラパゴス.jpg */; };
@@ -57,6 +87,11 @@
 		3B6FC3571ED8126E00F37963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6FC3551ED8126E00F37963 /* LaunchScreen.storyboard */; };
 		3B6FC3621ED8126E00F37963 /* PhotoXFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FC3611ED8126E00F37963 /* PhotoXFTests.swift */; };
 		3B6FC36D1ED8126E00F37963 /* PhotoXFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FC36C1ED8126E00F37963 /* PhotoXFUITests.swift */; };
+		3B7A611B1F6E2A720005A78A /* 立ち入り禁止.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A61161F6E2A720005A78A /* 立ち入り禁止.png */; };
+		3B7A611C1F6E2A720005A78A /* ハート1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A61171F6E2A720005A78A /* ハート1.png */; };
+		3B7A611D1F6E2A720005A78A /* 時計.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A61181F6E2A720005A78A /* 時計.png */; };
+		3B7A611E1F6E2A720005A78A /* ハート2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A61191F6E2A720005A78A /* ハート2.png */; };
+		3B7A611F1F6E2A720005A78A /* 星二つ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A611A1F6E2A720005A78A /* 星二つ.png */; };
 		3B7D5E631F5A8B38006779FD /* AKASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D5E621F5A8B38006779FD /* AKASViewController.swift */; };
 		3B8746F01F6D5EB300BEC9BF /* DNS.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8746EF1F6D5EB300BEC9BF /* DNS.png */; };
 		3B8746F21F6D628D00BEC9BF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8746F11F6D628D00BEC9BF /* NewViewController.swift */; };
@@ -95,6 +130,36 @@
 /* Begin PBXFileReference section */
 		3B08CC741F64FF2300B2FFAD /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Copy.png; sourceTree = "<group>"; };
 		3B08CC761F6500DB00B2FFAD /* LAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAL.png; sourceTree = "<group>"; };
+		3B19C6C61F6E781600E6C8B1 /* ターゲット2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ターゲット2.png"; sourceTree = "<group>"; };
+		3B19C6C71F6E781600E6C8B1 /* ターゲット3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ターゲット3.png"; sourceTree = "<group>"; };
+		3B19C6C81F6E781600E6C8B1 /* 思い出し1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "思い出し1.png"; sourceTree = "<group>"; };
+		3B19C6C91F6E781600E6C8B1 /* 禁止3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禁止3.png"; sourceTree = "<group>"; };
+		3B19C6CA1F6E781600E6C8B1 /* OK2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OK2.png; sourceTree = "<group>"; };
+		3B19C6CB1F6E781600E6C8B1 /* 思い出し2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "思い出し2.png"; sourceTree = "<group>"; };
+		3B19C6CC1F6E781600E6C8B1 /* 音符2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音符2.png"; sourceTree = "<group>"; };
+		3B19C6CD1F6E781600E6C8B1 /* 音符3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音符3.png"; sourceTree = "<group>"; };
+		3B19C6CE1F6E781600E6C8B1 /* 音符4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音符4.png"; sourceTree = "<group>"; };
+		3B19C6CF1F6E781600E6C8B1 /* はさみ1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "はさみ1.png"; sourceTree = "<group>"; };
+		3B19C6D01F6E781600E6C8B1 /* メールボックス3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "メールボックス3.png"; sourceTree = "<group>"; };
+		3B19C6D11F6E781600E6C8B1 /* メールボックス4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "メールボックス4.png"; sourceTree = "<group>"; };
+		3B19C6D21F6E781600E6C8B1 /* リサイクルしよう.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "リサイクルしよう.png"; sourceTree = "<group>"; };
+		3B19C6D31F6E781600E6C8B1 /* 音符5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音符5.png"; sourceTree = "<group>"; };
+		3B19C6D41F6E781600E6C8B1 /* カーソル1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "カーソル1.png"; sourceTree = "<group>"; };
+		3B19C6D51F6E781600E6C8B1 /* カーソル2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "カーソル2.png"; sourceTree = "<group>"; };
+		3B19C6D61F6E781600E6C8B1 /* 傘1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傘1.png"; sourceTree = "<group>"; };
+		3B19C6D71F6E781600E6C8B1 /* 傘2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傘2.png"; sourceTree = "<group>"; };
+		3B19C6D81F6E781600E6C8B1 /* 傘3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傘3.png"; sourceTree = "<group>"; };
+		3B19C6D91F6E781600E6C8B1 /* 傘4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傘4.png"; sourceTree = "<group>"; };
+		3B19C6DA1F6E781600E6C8B1 /* OK21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OK21.png; sourceTree = "<group>"; };
+		3B19C6DB1F6E781600E6C8B1 /* カーソル3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "カーソル3.png"; sourceTree = "<group>"; };
+		3B19C6DC1F6E781600E6C8B1 /* はさみ2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "はさみ2.png"; sourceTree = "<group>"; };
+		3B19C6DD1F6E781600E6C8B1 /* メールボックス1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "メールボックス1.png"; sourceTree = "<group>"; };
+		3B19C6DE1F6E781600E6C8B1 /* 禁止1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禁止1.png"; sourceTree = "<group>"; };
+		3B19C6DF1F6E781600E6C8B1 /* OK3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OK3.png; sourceTree = "<group>"; };
+		3B19C6E01F6E781600E6C8B1 /* ターゲット1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ターゲット1.png"; sourceTree = "<group>"; };
+		3B19C6E11F6E781600E6C8B1 /* メールボックス2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "メールボックス2.png"; sourceTree = "<group>"; };
+		3B19C6E21F6E781600E6C8B1 /* 音符1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音符1.png"; sourceTree = "<group>"; };
+		3B19C6E31F6E781600E6C8B1 /* 禁止2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禁止2.png"; sourceTree = "<group>"; };
 		3B1EA23F1F6DD6CA0076A832 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
 		3B1EA2411F6DFD700076A832 /* StampTeste.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampTeste.swift; sourceTree = "<group>"; };
 		3B22C69F1F0A38DF009FADAC /* ガラパゴス.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ガラパゴス.jpg"; sourceTree = "<group>"; };
@@ -149,6 +214,11 @@
 		3B6FC3681ED8126E00F37963 /* PhotoXFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoXFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6FC36C1ED8126E00F37963 /* PhotoXFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoXFUITests.swift; sourceTree = "<group>"; };
 		3B6FC36E1ED8126E00F37963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7A61161F6E2A720005A78A /* 立ち入り禁止.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立ち入り禁止.png"; sourceTree = "<group>"; };
+		3B7A61171F6E2A720005A78A /* ハート1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ハート1.png"; sourceTree = "<group>"; };
+		3B7A61181F6E2A720005A78A /* 時計.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "時計.png"; sourceTree = "<group>"; };
+		3B7A61191F6E2A720005A78A /* ハート2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ハート2.png"; sourceTree = "<group>"; };
+		3B7A611A1F6E2A720005A78A /* 星二つ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星二つ.png"; sourceTree = "<group>"; };
 		3B7D5E621F5A8B38006779FD /* AKASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKASViewController.swift; sourceTree = "<group>"; };
 		3B8746EF1F6D5EB300BEC9BF /* DNS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DNS.png; sourceTree = "<group>"; };
 		3B8746F11F6D628D00BEC9BF /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
@@ -251,7 +321,42 @@
 				3B6FC3501ED8126D00F37963 /* Main.storyboard */,
 				3B6FC3531ED8126E00F37963 /* Assets.xcassets */,
 				3B6FC3551ED8126E00F37963 /* LaunchScreen.storyboard */,
+				3B19C6E01F6E781600E6C8B1 /* ターゲット1.png */,
+				3B19C6C61F6E781600E6C8B1 /* ターゲット2.png */,
+				3B19C6C71F6E781600E6C8B1 /* ターゲット3.png */,
+				3B19C6C81F6E781600E6C8B1 /* 思い出し1.png */,
+				3B19C6CB1F6E781600E6C8B1 /* 思い出し2.png */,
+				3B19C6DE1F6E781600E6C8B1 /* 禁止1.png */,
+				3B19C6E31F6E781600E6C8B1 /* 禁止2.png */,
+				3B19C6C91F6E781600E6C8B1 /* 禁止3.png */,
+				3B19C6DA1F6E781600E6C8B1 /* OK21.png */,
+				3B19C6CA1F6E781600E6C8B1 /* OK2.png */,
+				3B19C6DF1F6E781600E6C8B1 /* OK3.png */,
+				3B19C6E21F6E781600E6C8B1 /* 音符1.png */,
+				3B19C6CC1F6E781600E6C8B1 /* 音符2.png */,
+				3B19C6CD1F6E781600E6C8B1 /* 音符3.png */,
+				3B19C6CE1F6E781600E6C8B1 /* 音符4.png */,
+				3B19C6D31F6E781600E6C8B1 /* 音符5.png */,
+				3B19C6CF1F6E781600E6C8B1 /* はさみ1.png */,
+				3B19C6DC1F6E781600E6C8B1 /* はさみ2.png */,
+				3B19C6DD1F6E781600E6C8B1 /* メールボックス1.png */,
+				3B19C6E11F6E781600E6C8B1 /* メールボックス2.png */,
+				3B19C6D01F6E781600E6C8B1 /* メールボックス3.png */,
+				3B19C6D11F6E781600E6C8B1 /* メールボックス4.png */,
+				3B19C6D21F6E781600E6C8B1 /* リサイクルしよう.png */,
+				3B19C6D41F6E781600E6C8B1 /* カーソル1.png */,
+				3B19C6D51F6E781600E6C8B1 /* カーソル2.png */,
+				3B19C6DB1F6E781600E6C8B1 /* カーソル3.png */,
+				3B19C6D61F6E781600E6C8B1 /* 傘1.png */,
+				3B19C6D71F6E781600E6C8B1 /* 傘2.png */,
+				3B19C6D81F6E781600E6C8B1 /* 傘3.png */,
+				3B19C6D91F6E781600E6C8B1 /* 傘4.png */,
 				3B1EA23F1F6DD6CA0076A832 /* StampViewController.swift */,
+				3B7A61161F6E2A720005A78A /* 立ち入り禁止.png */,
+				3B7A61171F6E2A720005A78A /* ハート1.png */,
+				3B7A61181F6E2A720005A78A /* 時計.png */,
+				3B7A61191F6E2A720005A78A /* ハート2.png */,
+				3B7A611A1F6E2A720005A78A /* 星二つ.png */,
 				3B6FC3581ED8126E00F37963 /* Info.plist */,
 				3B4EE8E11EE2969E00AE42B1 /* 頭悪い.png */,
 				3BCEAE3E1F650E250061C526 /* CamSD.png */,
@@ -423,43 +528,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B19C6F21F6E781600E6C8B1 /* カーソル1.png in Resources */,
 				3B22C6BE1F0A38E0009FADAC /* 幻覚.jpg in Resources */,
 				3B22C6C11F0A38E0009FADAC /* 新聞画像.jpg in Resources */,
+				3B19C6FF1F6E781600E6C8B1 /* メールボックス2.png in Resources */,
 				3BCEAE3B1F6506600061C526 /* c7f06ee3.png in Resources */,
+				3B19C6EF1F6E781600E6C8B1 /* メールボックス4.png in Resources */,
 				3BE480F01EE24D11002620CB /* くるくるEX.png in Resources */,
+				3B7A611E1F6E2A720005A78A /* ハート2.png in Resources */,
+				3B19C7011F6E781600E6C8B1 /* 禁止2.png in Resources */,
 				3B22C6C41F0A38E0009FADAC /* 赤色.jpg in Resources */,
+				3B19C6E81F6E781600E6C8B1 /* OK2.png in Resources */,
 				3BCEAE3F1F650E250061C526 /* CamSD.png in Resources */,
 				3B2AC0961EDA994E00B8E10B /* KIS.png in Resources */,
+				3B19C6FB1F6E781600E6C8B1 /* メールボックス1.png in Resources */,
 				3B22C6CA1F0A38E0009FADAC /* 緑反転.jpg in Resources */,
 				3B2AC0971EDA994E00B8E10B /* キラキラ.png in Resources */,
 				3B22C6BD1F0A38E0009FADAC /* 偽色.jpg in Resources */,
+				3B19C6FE1F6E781600E6C8B1 /* ターゲット1.png in Resources */,
 				3B22C6BB1F0A38E0009FADAC /* 黄金.jpg in Resources */,
 				3B22C6B91F0A38E0009FADAC /* 暗い.jpg in Resources */,
 				3B22C6C61F0A38E0009FADAC /* 白黒.jpg in Resources */,
 				3B22C6BF1F0A38E0009FADAC /* 暑い場所.jpg in Resources */,
 				3B22C6BC1F0A38E0009FADAC /* 黄緑色.jpg in Resources */,
+				3B19C6E91F6E781600E6C8B1 /* 思い出し2.png in Resources */,
+				3B7A611B1F6E2A720005A78A /* 立ち入り禁止.png in Resources */,
+				3B19C6E51F6E781600E6C8B1 /* ターゲット3.png in Resources */,
 				3B22C6B61F0A38E0009FADAC /* セピア.jpg in Resources */,
 				3B08CC771F6500DB00B2FFAD /* LAL.png in Resources */,
 				3BCEAE391F6504920061C526 /* images.png in Resources */,
+				3B19C6E71F6E781600E6C8B1 /* 禁止3.png in Resources */,
+				3B19C6F61F6E781600E6C8B1 /* 傘3.png in Resources */,
 				3B2AC0991EDA994E00B8E10B /* 電球.png in Resources */,
 				3B22C6C31F0A38E0009FADAC /* 青色.jpg in Resources */,
+				3B19C6FC1F6E781600E6C8B1 /* 禁止1.png in Resources */,
+				3B19C6EE1F6E781600E6C8B1 /* メールボックス3.png in Resources */,
 				3B4EE8E31EE2969E00AE42B1 /* 頭悪い.png in Resources */,
+				3B19C6ED1F6E781600E6C8B1 /* はさみ1.png in Resources */,
+				3B19C7001F6E781600E6C8B1 /* 音符1.png in Resources */,
+				3B19C6FD1F6E781600E6C8B1 /* OK3.png in Resources */,
+				3B19C6EA1F6E781600E6C8B1 /* 音符2.png in Resources */,
 				3B22C6C81F0A38E0009FADAC /* 反転.jpg in Resources */,
 				3B22C6B71F0A38E0009FADAC /* ピンク色.jpg in Resources */,
+				3B19C6F91F6E781600E6C8B1 /* カーソル3.png in Resources */,
 				3B6FC3571ED8126E00F37963 /* LaunchScreen.storyboard in Resources */,
+				3B19C6F31F6E781600E6C8B1 /* カーソル2.png in Resources */,
+				3B19C6EB1F6E781600E6C8B1 /* 音符3.png in Resources */,
 				3B4EE8E41EE2969E00AE42B1 /* 雷.png in Resources */,
 				3B22C6BA1F0A38E0009FADAC /* 液晶破損.jpg in Resources */,
 				3B08CC751F64FF2300B2FFAD /* Copy.png in Resources */,
+				3B19C6EC1F6E781600E6C8B1 /* 音符4.png in Resources */,
 				3B2AC0951EDA994E00B8E10B /* kemuri.png in Resources */,
 				3B22C6B81F0A38E0009FADAC /* ブラー.jpg in Resources */,
 				3BC39B751F64EAF900A9C8B0 /* 1179.png in Resources */,
+				3B19C6E41F6E781600E6C8B1 /* ターゲット2.png in Resources */,
 				3B2AC09B1EDA996C00B8E10B /* ブラックスクリーン.png in Resources */,
 				3B22C6C91F0A38E0009FADAC /* 明るい.jpg in Resources */,
+				3B19C6F11F6E781600E6C8B1 /* 音符5.png in Resources */,
 				3B8746F01F6D5EB300BEC9BF /* DNS.png in Resources */,
+				3B19C6E61F6E781600E6C8B1 /* 思い出し1.png in Resources */,
 				3B2AC0921EDA994E00B8E10B /* hatena.png in Resources */,
 				3B2AC0981EDA994E00B8E10B /* ビックリマーク.png in Resources */,
 				3BBACB8E1F488247004468B5 /* icon.png in Resources */,
+				3B19C6F71F6E781600E6C8B1 /* 傘4.png in Resources */,
+				3B19C6F51F6E781600E6C8B1 /* 傘2.png in Resources */,
 				3B6FC3541ED8126E00F37963 /* Assets.xcassets in Resources */,
+				3B19C6F41F6E781600E6C8B1 /* 傘1.png in Resources */,
 				3B36E3211F248417008F8DA6 /* ImagePicture.png in Resources */,
 				3B9F559A1EE26AA200D3B9A0 /* IMGA0004.png in Resources */,
 				3B6FC3521ED8126D00F37963 /* Main.storyboard in Resources */,
@@ -469,8 +603,14 @@
 				3B22C6C01F0A38E0009FADAC /* 色彩増加.jpg in Resources */,
 				3B48D3781F0A3E9E00528087 /* hukidasi.png in Resources */,
 				3B22C6C21F0A38E0009FADAC /* 真っ赤な絵.jpg in Resources */,
+				3B19C6FA1F6E781600E6C8B1 /* はさみ2.png in Resources */,
+				3B7A611C1F6E2A720005A78A /* ハート1.png in Resources */,
+				3B7A611D1F6E2A720005A78A /* 時計.png in Resources */,
 				3B48D3761F0A3E9E00528087 /* Yazirusi.png in Resources */,
 				3BCEAE3D1F650AB00061C526 /* aajs.png in Resources */,
+				3B7A611F1F6E2A720005A78A /* 星二つ.png in Resources */,
+				3B19C6F81F6E781600E6C8B1 /* OK21.png in Resources */,
+				3B19C6F01F6E781600E6C8B1 /* リサイクルしよう.png in Resources */,
 				3B22C6B51F0A38E0009FADAC /* ガラパゴス.jpg in Resources */,
 				3B22C6C71F0A38E0009FADAC /* 白黒反転.jpg in Resources */,
 				3B48D3701F0A3B4800528087 /* gaggagagag.png in Resources */,

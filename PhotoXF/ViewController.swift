@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  PhotoXF
-//
-//  Created by KOTARO on 2017/05/26.
-//  Copyright © 2017年 KOTARO. All rights reserved.
-//
-
 import UIKit
 
 import Accounts
@@ -665,18 +657,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
             
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
             })
             alert.addAction(defaultAction)
             
-            // ④ Alertを表示
             present(alert, animated: true, completion: nil)
             
             
@@ -700,18 +686,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
             
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
             })
             alert.addAction(defaultAction)
             
-            // ④ Alertを表示
             present(alert, animated: true, completion: nil)
             
             
@@ -732,18 +712,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
             
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
             })
             alert.addAction(defaultAction)
             
-            // ④ Alertを表示
             present(alert, animated: true, completion: nil)
             
             
@@ -762,18 +736,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
             
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
             })
             alert.addAction(defaultAction)
             
-            // ④ Alertを表示
             present(alert, animated: true, completion: nil)
             
             
@@ -795,18 +763,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
             
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
             })
             alert.addAction(defaultAction)
             
-            // ④ Alertを表示
             present(alert, animated: true, completion: nil)
             
             
@@ -827,18 +789,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
             
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
             })
             alert.addAction(defaultAction)
             
-            // ④ Alertを表示
             present(alert, animated: true, completion: nil)
             
             
@@ -861,19 +817,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj() {
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
             })
             alert.addAction(defaultAction)
             
-            // ④ Alertを表示
             present(alert, animated: true, completion: nil)
             
             
@@ -895,18 +844,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             if (originalImage == nil){
                 let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
                 
-                // ② Actionの設定
-                // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-                // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-                // OKボタン
                 let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                    // ボタンが押された時の処理を書く（クロージャ実装）
                     (action: UIAlertAction!) -> Void in
                     print("OK")
                 })
                 alert.addAction(defaultAction)
                 
-                // ④ Alertを表示
                 present(alert, animated: true, completion: nil)
                 
                 

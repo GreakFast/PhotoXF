@@ -1,6 +1,3 @@
-//  Copyright © 2016年 tekuru. All rights reserved.
-//
-
 import UIKit
 
 class Stamp: UIImageView, UIGestureRecognizerDelegate {
