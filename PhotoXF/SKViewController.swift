@@ -28,6 +28,7 @@ class SKViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     override func viewWillAppear(_ animated: Bool) {
         cameraImageView.image = originalImage
         print("original\(originalImage)")
+        
     }
     @IBAction func takePhoto() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -55,6 +56,9 @@ class SKViewController: UIViewController, UIImagePickerControllerDelegate, UINav
             present(alert, animated: true, completion: nil)
             
         }
+    }
+    @IBAction func Frashed() {
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func Tested() {
             if (originalImage == nil){

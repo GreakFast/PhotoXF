@@ -39,6 +39,7 @@
 		3B19C6FF1F6E781600E6C8B1 /* メールボックス2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6E11F6E781600E6C8B1 /* メールボックス2.png */; };
 		3B19C7001F6E781600E6C8B1 /* 音符1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6E21F6E781600E6C8B1 /* 音符1.png */; };
 		3B19C7011F6E781600E6C8B1 /* 禁止2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6E31F6E781600E6C8B1 /* 禁止2.png */; };
+		3B19C7031F6E829200E6C8B1 /* Fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C7021F6E829200E6C8B1 /* Fill.png */; };
 		3B1EA2401F6DD6CA0076A832 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EA23F1F6DD6CA0076A832 /* StampViewController.swift */; };
 		3B1EA2421F6DFD700076A832 /* StampTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EA2411F6DFD700076A832 /* StampTeste.swift */; };
 		3B22C6B51F0A38E0009FADAC /* ガラパゴス.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B22C69F1F0A38DF009FADAC /* ガラパゴス.jpg */; };
@@ -95,6 +96,7 @@
 		3B7D5E631F5A8B38006779FD /* AKASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D5E621F5A8B38006779FD /* AKASViewController.swift */; };
 		3B8746F01F6D5EB300BEC9BF /* DNS.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8746EF1F6D5EB300BEC9BF /* DNS.png */; };
 		3B8746F21F6D628D00BEC9BF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8746F11F6D628D00BEC9BF /* NewViewController.swift */; };
+		3B99BB6B1F6E889800F791D4 /* StartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */; };
 		3B9F559A1EE26AA200D3B9A0 /* IMGA0004.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F55991EE26AA200D3B9A0 /* IMGA0004.png */; };
 		3BBA187B1EDA953600500632 /* Button_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA187A1EDA953600500632 /* Button_ViewController.swift */; };
 		3BBACB8E1F488247004468B5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BBACB8D1F488247004468B5 /* icon.png */; };
@@ -160,6 +162,7 @@
 		3B19C6E11F6E781600E6C8B1 /* メールボックス2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "メールボックス2.png"; sourceTree = "<group>"; };
 		3B19C6E21F6E781600E6C8B1 /* 音符1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音符1.png"; sourceTree = "<group>"; };
 		3B19C6E31F6E781600E6C8B1 /* 禁止2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禁止2.png"; sourceTree = "<group>"; };
+		3B19C7021F6E829200E6C8B1 /* Fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fill.png; sourceTree = "<group>"; };
 		3B1EA23F1F6DD6CA0076A832 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
 		3B1EA2411F6DFD700076A832 /* StampTeste.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampTeste.swift; sourceTree = "<group>"; };
 		3B22C69F1F0A38DF009FADAC /* ガラパゴス.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ガラパゴス.jpg"; sourceTree = "<group>"; };
@@ -222,6 +225,7 @@
 		3B7D5E621F5A8B38006779FD /* AKASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKASViewController.swift; sourceTree = "<group>"; };
 		3B8746EF1F6D5EB300BEC9BF /* DNS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DNS.png; sourceTree = "<group>"; };
 		3B8746F11F6D628D00BEC9BF /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartedViewController.swift; sourceTree = "<group>"; };
 		3B9F55991EE26AA200D3B9A0 /* IMGA0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMGA0004.png; sourceTree = "<group>"; };
 		3BBA187A1EDA953600500632 /* Button_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button_ViewController.swift; sourceTree = "<group>"; };
 		3BBACB8D1F488247004468B5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -352,6 +356,7 @@
 				3B19C6D81F6E781600E6C8B1 /* 傘3.png */,
 				3B19C6D91F6E781600E6C8B1 /* 傘4.png */,
 				3B1EA23F1F6DD6CA0076A832 /* StampViewController.swift */,
+				3B19C7021F6E829200E6C8B1 /* Fill.png */,
 				3B7A61161F6E2A720005A78A /* 立ち入り禁止.png */,
 				3B7A61171F6E2A720005A78A /* ハート1.png */,
 				3B7A61181F6E2A720005A78A /* 時計.png */,
@@ -393,6 +398,7 @@
 				3BC39B721F64E53E00A9C8B0 /* SKViewController.swift */,
 				3B8746F11F6D628D00BEC9BF /* NewViewController.swift */,
 				3B1EA2411F6DFD700076A832 /* StampTeste.swift */,
+				3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */,
 			);
 			path = PhotoXF;
 			sourceTree = "<group>";
@@ -600,6 +606,7 @@
 				3BC388A91F0CDC77006C782C /* kibana.png in Resources */,
 				3B2AC0941EDA994E00B8E10B /* honou.png in Resources */,
 				3B47C2701EFFABC60072EC4D /* rainbow.png in Resources */,
+				3B19C7031F6E829200E6C8B1 /* Fill.png in Resources */,
 				3B22C6C01F0A38E0009FADAC /* 色彩増加.jpg in Resources */,
 				3B48D3781F0A3E9E00528087 /* hukidasi.png in Resources */,
 				3B22C6C21F0A38E0009FADAC /* 真っ赤な絵.jpg in Resources */,
@@ -647,6 +654,7 @@
 				3B1EA2401F6DD6CA0076A832 /* StampViewController.swift in Sources */,
 				3B8746F21F6D628D00BEC9BF /* NewViewController.swift in Sources */,
 				3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */,
+				3B99BB6B1F6E889800F791D4 /* StartedViewController.swift in Sources */,
 				3BBA187B1EDA953600500632 /* Button_ViewController.swift in Sources */,
 				3B1EA2421F6DFD700076A832 /* StampTeste.swift in Sources */,
 				3BC39B731F64E53E00A9C8B0 /* SKViewController.swift in Sources */,

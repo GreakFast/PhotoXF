@@ -60,6 +60,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         saveData.set(UIImagePNGRepresentation(originalImage!), forKey: "AS")
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func homes() {
+        let storyboard: UIStoryboard = self.storyboard!
+        let Started = storyboard.instantiateViewController(withIdentifier: "Started")
+        present(Started, animated: true, completion: nil)
+
+    }
     @IBAction func savePhoto() {
         UIImageWriteToSavedPhotosAlbum(cameraImageView.image!, nil, nil, nil)
         let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
