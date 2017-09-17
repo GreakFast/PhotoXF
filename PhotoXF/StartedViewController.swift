@@ -8,19 +8,39 @@
 
 import UIKit
 
+
 class StartedViewController: UIViewController {
+    
+    
+    @IBOutlet weak var label : UILabel!
+        var blinkLabelTimer = Timer()
+    
+    
+    
+    
     @IBAction func Startedvier() {
         let storyboard: UIStoryboard = self.storyboard!
         let Kbs = storyboard.instantiateViewController(withIdentifier: "Kbs")
         present(Kbs, animated: true, completion: nil)
-
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        blinkLabelTimer = Timer.scheduledTimer(
+            timeInterval: 4.0,
+            target: self,
+            selector: #selector(getter: StartedViewController.label),
+            userInfo: nil,
+            repeats: true
+        )
     }
+    
+    func blinkLabel()
+    {
+        self.label.isHidden = !self.label.isHidden
+    }
+        // Do any additional setup after loading the view.
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
