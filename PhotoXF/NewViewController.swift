@@ -55,7 +55,6 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         UIImageWriteToSavedPhotosAlbum(savedImage!, self, nil, nil)
         
         let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
-        
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
             (action: UIAlertAction!) -> Void in
             print("OK")
