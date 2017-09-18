@@ -2,6 +2,8 @@
 import UIKit
 
 class StampViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    var data = NSData()
+
     
     let stampArray = [
         UIImage(named: "電球.png"),

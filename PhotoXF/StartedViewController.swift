@@ -13,9 +13,6 @@ class StartedViewController: UIViewController {
     
     
     @IBOutlet weak var label : UILabel!
-        var blinkLabelTimer = Timer()
-    
-    
     
     
     @IBAction func Startedvier() {
@@ -27,19 +24,15 @@ class StartedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        blinkLabelTimer = Timer.scheduledTimer(
-            timeInterval: 4.0,
-            target: self,
-            selector: #selector(getter: StartedViewController.label),
-            userInfo: nil,
-            repeats: true
-        )
+        label.text = "Which would you like to use?"
+        label.font = UIFont(name: "HiraMinProN-W3", size: 20)
+        label.sizeToFit()
+        label.center = self.view.center
+        self.view.addSubview(label)
+        
     }
     
-    func blinkLabel()
-    {
-        self.label.isHidden = !self.label.isHidden
-    }
+
         // Do any additional setup after loading the view.
 
     override func didReceiveMemoryWarning() {
