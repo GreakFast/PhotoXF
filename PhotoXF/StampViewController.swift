@@ -52,7 +52,32 @@ class StampViewController: UIViewController, UICollectionViewDataSource, UIColle
         UIImage(named: "傘1.png"),
         UIImage(named: "傘2.png"),
         UIImage(named: "傘3.png"),
-        UIImage(named: "傘4.png")
+        UIImage(named: "傘4.png"),
+        UIImage(named: "水泳1.png"),
+        UIImage(named: "水泳2.png"),
+        UIImage(named: "水泳3.png"),
+        UIImage(named: "地球1.png"),
+        UIImage(named: "地球2.png"),
+        UIImage(named: "地球3.png"),
+        UIImage(named: "地球4.png"),
+        UIImage(named: "Camera.png"),
+        UIImage(named: "フィルム1.png"),
+        UIImage(named: "フィルム2.png"),
+        UIImage(named: "フィルム3.png"),
+        UIImage(named: "人1.png"),
+        UIImage(named: "人2.png"),
+        UIImage(named: "人3.png"),
+        UIImage(named: "人4.png"),
+        UIImage(named: "人5.png"),
+        UIImage(named: "人6.png"),
+        UIImage(named: "車椅子1.png"),
+        UIImage(named: "車椅子2.png"),
+        UIImage(named: "車椅子3.png"),
+        UIImage(named: "飛行機1.png"),
+        UIImage(named: "飛行機2.png"),
+        UIImage(named: "飛行機3.png"),
+        UIImage(named: "対処.png"),
+        UIImage(named: "お守り.png")
         
     ]
     

@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Do any additional setup after loading the view, typically from a nib.
         
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
         let imageDate:NSData = UserDefaults.standard.object(forKey: "AS") as! NSData

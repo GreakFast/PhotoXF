@@ -29,7 +29,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19W-Po-qKy">
                                 <rect key="frame" x="45" y="20" width="285" height="285"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Fill.png"/>
+                                <state key="normal" image="Fill.png"/>
                                 <connections>
                                     <segue destination="IWi-ax-dhr" kind="modal" id="cr9-sU-p9U"/>
                                 </connections>
@@ -37,9 +37,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-oa-Jdy">
                                 <rect key="frame" x="45" y="362" width="285" height="285"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <state key="normal" title="Button" image="c7f06ee3.png"/>
+                                <state key="normal" image="c7f06ee3.png"/>
                                 <connections>
-                                    <segue destination="bnq-8d-Gqx" kind="modal" id="B7n-cL-g16"/>
+                                    <segue destination="bnq-8d-Gqx" kind="modal" id="XAU-y2-gvj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which would you like to use?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-dV-KkR">
@@ -80,7 +80,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxD-4P-JZa">
                                 <rect key="frame" x="92" y="28" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="CamSD.png"/>
+                                <state key="normal" image="CamSD.png"/>
                                 <connections>
                                     <action selector="takePhoto" destination="IWi-ax-dhr" eventType="touchUpInside" id="Y4T-DL-6Zs"/>
                                 </connections>
@@ -113,7 +113,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-lf-vZa">
                                 <rect key="frame" x="92" y="226" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="aajs.png"/>
+                                <state key="normal" image="aajs.png"/>
                                 <connections>
                                     <action selector="openAlbum" destination="IWi-ax-dhr" eventType="touchUpInside" id="esG-EK-txT"/>
                                 </connections>
@@ -121,7 +121,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBx-KK-XcB">
                                 <rect key="frame" x="16" y="20" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="1179.png"/>
+                                <state key="normal" image="1179.png"/>
                                 <connections>
                                     <action selector="Frashed" destination="IWi-ax-dhr" eventType="touchUpInside" id="8bw-Qr-Zez"/>
                                 </connections>
@@ -183,7 +183,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-yD-d41">
                                 <rect key="frame" x="34" y="615" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button" image="LAL.png"/>
+                                <state key="normal" image="LAL.png"/>
                                 <connections>
                                     <action selector="snsPhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTp-nS-Ffm"/>
                                 </connections>
@@ -551,7 +551,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py3-7t-kT6">
                                 <rect key="frame" x="288" y="611" width="57" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button" image="Copy.png"/>
+                                <state key="normal" image="Copy.png"/>
                                 <connections>
                                     <action selector="savePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="l81-YQ-1YF"/>
                                 </connections>
@@ -559,7 +559,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUc-Bu-EMg">
                                 <rect key="frame" x="13" y="8" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="1179.png"/>
+                                <state key="normal" image="1179.png"/>
                                 <connections>
                                     <action selector="homes" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFH-k4-tKz"/>
                                 </connections>
@@ -644,7 +644,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHn-kG-2qT">
                                 <rect key="frame" x="77" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button" image="aajs.png"/>
+                                <state key="normal" image="aajs.png"/>
                                 <connections>
                                     <action selector="camera" destination="bnq-8d-Gqx" eventType="touchUpInside" id="rnP-wB-r36"/>
                                 </connections>
@@ -652,7 +652,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIo-gW-zRz">
                                 <rect key="frame" x="231" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button" image="DNS.png"/>
+                                <state key="normal" image="DNS.png"/>
                                 <connections>
                                     <action selector="deleteTapped:" destination="bnq-8d-Gqx" eventType="touchUpInside" id="Nb5-py-wLd"/>
                                 </connections>
@@ -660,7 +660,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVQ-s3-O9r">
                                 <rect key="frame" x="153" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button" image="c7f06ee3.png"/>
+                                <state key="normal" image="c7f06ee3.png"/>
                                 <connections>
                                     <segue destination="ekP-sd-LMf" kind="modal" id="OcN-Ji-Vnb"/>
                                 </connections>
@@ -668,7 +668,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGN-2G-Y2F">
                                 <rect key="frame" x="307" y="586" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button" image="Copy.png"/>
+                                <state key="normal" image="Copy.png"/>
                                 <connections>
                                     <action selector="sns" destination="bnq-8d-Gqx" eventType="touchUpInside" id="FQr-fv-0oK"/>
                                 </connections>
@@ -695,7 +695,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmR-Z9-x45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874" y="804"/>
+            <point key="canvasLocation" x="-874.39999999999998" y="803.74812593703155"/>
         </scene>
         <!--Stamp View Controller-->
         <scene sceneID="X7k-9R-cLC">
