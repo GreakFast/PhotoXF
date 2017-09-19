@@ -741,8 +741,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="ekP-sd-LMf" id="WOW-63-7DE"/>
-                                    <outlet property="delegate" destination="ekP-sd-LMf" id="Txg-lP-dj1"/>
+                                    <outlet property="dataSource" destination="ekP-sd-LMf" id="qhC-z1-p95"/>
+                                    <outlet property="delegate" destination="ekP-sd-LMf" id="8oU-QC-OjW"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW8-h8-jnh" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
