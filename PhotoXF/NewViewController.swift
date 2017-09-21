@@ -69,6 +69,24 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
             subView.removeFromSuperview()
         }
     }
+    @IBAction func das() {
+        UIGraphicsBeginImageContextWithOptions(self.imageView.frame.size, self.view.isOpaque, 0.0)
+        self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let savedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext();
+        UIImageWriteToSavedPhotosAlbum(savedImage!, self, nil, nil)
+        
+        let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
+        
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("OK")
+        })
+        alert.addAction(defaultAction)
+        
+        present(alert, animated: true, completion: nil)
+
+    }
 
 
 

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SEt-t9-99e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SEt-t9-99e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -670,7 +669,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="Copy.png"/>
                                 <connections>
-                                    <action selector="sns" destination="bnq-8d-Gqx" eventType="touchUpInside" id="FQr-fv-0oK"/>
+                                    <action selector="das" destination="bnq-8d-Gqx" eventType="touchUpInside" id="4Qc-gH-UOk"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdI-YS-89Q">
@@ -695,7 +694,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmR-Z9-x45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874.39999999999998" y="803.74812593703155"/>
+            <point key="canvasLocation" x="-759" y="709"/>
         </scene>
         <!--Stamp View Controller-->
         <scene sceneID="X7k-9R-cLC">
@@ -1094,27 +1093,27 @@
         <image name="Fill.png" width="500" height="500"/>
         <image name="Ha?image.png" width="1024" height="768"/>
         <image name="ImagePicture.png" width="1024" height="768"/>
-        <image name="KIS.png" width="2000" height="2000"/>
+        <image name="KIS.png" width="600" height="600"/>
         <image name="LAL.png" width="500" height="500"/>
         <image name="Thank_You!.png" width="744" height="768"/>
         <image name="Yazirusi.png" width="364" height="364"/>
         <image name="aajs.png" width="500" height="500"/>
         <image name="c7f06ee3.png" width="500" height="500"/>
-        <image name="hatena.png" width="1377" height="1377"/>
-        <image name="hibi.png" width="2000" height="2000"/>
-        <image name="honou.png" width="1467" height="1467"/>
-        <image name="hukidasi.png" width="621" height="620"/>
+        <image name="hatena.png" width="600" height="600"/>
+        <image name="hibi.png" width="600" height="600"/>
+        <image name="honou.png" width="600" height="600"/>
+        <image name="hukidasi.png" width="500" height="499"/>
         <image name="images.png" width="183" height="183"/>
         <image name="kemuri.png" width="1216" height="1216"/>
-        <image name="kibana.png" width="2376" height="2376"/>
+        <image name="kibana.png" width="500" height="500"/>
         <image name="rainbow.png" width="286" height="263"/>
         <image name="sakura.png" width="4224" height="2376"/>
         <image name="sakurabana.png" width="4224" height="2376"/>
         <image name="ごめん.png" width="1024" height="768"/>
         <image name="ガラパゴス.jpg" width="50" height="50"/>
-        <image name="キラキラ.png" width="2000" height="2000"/>
+        <image name="キラキラ.png" width="600" height="600"/>
         <image name="セピア.jpg" width="50" height="50"/>
-        <image name="ビックリマーク.png" width="902" height="902"/>
+        <image name="ビックリマーク.png" width="600" height="600"/>
         <image name="ピンク色.jpg" width="50" height="50"/>
         <image name="ブラー.jpg" width="50" height="50"/>
         <image name="偽色.jpg" width="50" height="50"/>
@@ -1133,10 +1132,10 @@
         <image name="緑反転.jpg" width="50" height="50"/>
         <image name="色彩増加.jpg" width="50" height="50"/>
         <image name="赤色.jpg" width="50" height="50"/>
-        <image name="雷.png" width="1137" height="1137"/>
-        <image name="電球.png" width="806" height="806"/>
+        <image name="雷.png" width="500" height="500"/>
+        <image name="電球.png" width="400" height="400"/>
         <image name="青色.jpg" width="50" height="50"/>
-        <image name="頭悪い.png" width="1563" height="1563"/>
+        <image name="頭悪い.png" width="500" height="500"/>
         <image name="黄緑色.jpg" width="50" height="50"/>
         <image name="黄金.jpg" width="50" height="50"/>
     </resources>
