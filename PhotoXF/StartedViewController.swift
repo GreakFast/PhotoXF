@@ -24,7 +24,7 @@ class StartedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "Which would you like to use?"
+        label.text = "どちらで編集しますか？"
         label.font = UIFont(name: "HiraMinProN-W3", size: 20)
         label.sizeToFit()
         label.center = self.view.center

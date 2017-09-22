@@ -80,8 +80,7 @@ class StampViewController: UIViewController, UICollectionViewDataSource, UIColle
         UIImage(named: "飛行機2.png"),
         UIImage(named: "飛行機3.png"),
         UIImage(named: "対処.png"),
-        UIImage(named: "お守り.png")
-        
+        UIImage(named: "お守り.png"),
     ]
     
     func  collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
