@@ -78,7 +78,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6e-90-dc6" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="40" y="203" width="293" height="80"/>
+                                <rect key="frame" x="41" y="113" width="293" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="縦で撮影した画像">
@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aH-GK-itk" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="40" y="563" width="293" height="80"/>
+                                <rect key="frame" x="41" y="473" width="293" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="横で撮影した画像">
@@ -122,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGi-mP-Wwp" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="40" y="383" width="293" height="80"/>
+                                <rect key="frame" x="41" y="293" width="293" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="スクリーンショットした画像">
@@ -141,28 +141,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="6Tu-AW-TVg" kind="modal" id="EnW-RP-R6t"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFj-l4-XIW" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="40" y="23" width="293" height="80"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="正方形でリサイズした画像">
-                                    <color key="titleColor" red="0.61534569299999997" green="0.0" blue="0.04277100256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.61534569299999997" blue="0.071675142110000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Vhc-Ud-8ma" kind="modal" id="fz9-Vy-5ju"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1349,84 +1327,6 @@
             </objects>
             <point key="canvasLocation" x="-697" y="1746"/>
         </scene>
-        <!--New View Controller-->
-        <scene sceneID="cR8-hj-fpc">
-            <objects>
-                <viewController id="Vhc-Ud-8ma" customClass="NewViewController" customModule="PhotoXF" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UE4-KM-3UR"/>
-                        <viewControllerLayoutGuide type="bottom" id="fBs-0I-VqT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="y4o-7r-t0n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7E-ls-ShL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="6bZ-3e-yUA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-wv-xTh">
-                                <rect key="frame" x="0.0" y="553" width="375" height="94"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.4363868199" green="0.041902702860000002" blue="0.048261627850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-QD-8rW">
-                                <rect key="frame" x="76" y="566" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="aajs.png"/>
-                                <connections>
-                                    <action selector="camera" destination="Vhc-Ud-8ma" eventType="touchUpInside" id="gdQ-ui-Mxq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKU-Cj-VwN">
-                                <rect key="frame" x="230" y="566" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="DNS.png"/>
-                                <connections>
-                                    <action selector="deleteTapped:" destination="Vhc-Ud-8ma" eventType="touchUpInside" id="h6D-a0-Ftx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qh8-HZ-sPe">
-                                <rect key="frame" x="152" y="566" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="c7f06ee3.png"/>
-                                <connections>
-                                    <segue destination="ekP-sd-LMf" kind="modal" id="bnM-q1-0m3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-C0-FhP">
-                                <rect key="frame" x="306" y="566" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="Copy.png"/>
-                                <connections>
-                                    <action selector="das" destination="Vhc-Ud-8ma" eventType="touchUpInside" id="QVb-r3-F2l"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-K9-Xiu">
-                                <rect key="frame" x="14" y="573" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="1179.png"/>
-                                <connections>
-                                    <action selector="Back" destination="Vhc-Ud-8ma" eventType="touchUpInside" id="rZW-9D-LDr"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="6bZ-3e-yUA" id="sIi-v7-wYd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TAM-jI-kRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3521" y="1746"/>
-        </scene>
     </scenes>
     <resources>
         <image name="1179.png" width="500" height="500"/>
@@ -1483,6 +1383,6 @@
         <image name="黄金.jpg" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="T6O-FQ-znq"/>
+        <segue reference="OcN-Ji-Vnb"/>
     </inferredMetricsTieBreakers>
 </document>
