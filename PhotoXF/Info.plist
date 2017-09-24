@@ -23,11 +23,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Seved</string>
+	<string>保存するためにライブラリにアクセスします。</string>
 	<key>NSCameraUsageDescription</key>
-	<string>内蔵カメラアクセス</string>
+	<string>カメラにアクセスします。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>ライブラリアクセス</string>
+	<string>ライブラリにアクセスします。</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
