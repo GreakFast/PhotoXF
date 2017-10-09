@@ -248,6 +248,7 @@
 		3B7A61191F6E2A720005A78A /* ハート2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ハート2.png"; sourceTree = "<group>"; };
 		3B7A611A1F6E2A720005A78A /* 星二つ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星二つ.png"; sourceTree = "<group>"; };
 		3B7D5E621F5A8B38006779FD /* AKASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKASViewController.swift; sourceTree = "<group>"; };
+		3B8501F81F8B09FB005BE42C /* Cammm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cammm.png; sourceTree = "<group>"; };
 		3B8746EF1F6D5EB300BEC9BF /* DNS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DNS.png; sourceTree = "<group>"; };
 		3B8746F11F6D628D00BEC9BF /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartedViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +290,7 @@
 		3BDBFEEF1F6F59BD00F92898 /* お守り.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "お守り.png"; sourceTree = "<group>"; };
 		3BE278791EDAC807008E31A9 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		3BE480EF1EE24D11002620CB /* くるくるEX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "くるくるEX.png"; sourceTree = "<group>"; };
+		3BE76B221F8B18C30091036F /* Stampred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stampred.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +376,8 @@
 				3B6FC34E1ED8126D00F37963 /* ViewController.swift */,
 				3B6FC3501ED8126D00F37963 /* Main.storyboard */,
 				3B6FC3531ED8126E00F37963 /* Assets.xcassets */,
+				3BE76B221F8B18C30091036F /* Stampred.png */,
+				3B8501F81F8B09FB005BE42C /* Cammm.png */,
 				3BDBFED71F6F59BD00F92898 /* 水泳1.png */,
 				3BDBFED81F6F59BD00F92898 /* 水泳2.png */,
 				3BDBFEDC1F6F59BD00F92898 /* 水泳3.png */,
@@ -571,14 +575,14 @@
 					3B6FC35C1ED8126E00F37963 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QCUSDZ23TE;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3B6FC3481ED8126D00F37963;
 					};
 					3B6FC3671ED8126E00F37963 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QCUSDZ23TE;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3B6FC3481ED8126D00F37963;
 					};
@@ -925,12 +929,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QCUSDZ23TE;
 				INFOPLIST_FILE = PhotoXF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -942,11 +947,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QCUSDZ23TE;
 				INFOPLIST_FILE = PhotoXF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -961,7 +967,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoXF.app/PhotoXF";
 			};
 			name = Debug;
@@ -976,7 +983,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoXF.app/PhotoXF";
 			};
 			name = Release;
@@ -990,7 +998,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = PhotoXF;
 			};
 			name = Debug;
@@ -1004,7 +1013,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = PhotoXF;
 			};
 			name = Release;

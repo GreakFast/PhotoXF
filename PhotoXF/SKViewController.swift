@@ -58,9 +58,8 @@ class SKViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         }
     }
     @IBAction func Frashed() {
-        let storyboard: UIStoryboard = self.storyboard!
-        let Started = storyboard.instantiateViewController(withIdentifier: "Started")
-        present(Started, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
+
         
     }
     @IBAction func Tested() {

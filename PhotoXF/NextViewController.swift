@@ -36,7 +36,7 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         
         // set pinch gesture target
         
-        self.pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(NextViewController.pinchRecognized(_:)))
+ 
         
         
         
@@ -54,10 +54,7 @@ class NextViewController: UIViewController , UIImagePickerControllerDelegate ,UI
         
         // add rotate gesture target
         
-        self.rotateGesture.addTarget(self, action: #selector(NextViewController.rotateView(_:)))
-        
-        
-        
+ 
         // add rotate gesture within view
         
         self.view.addGestureRecognizer(rotateGesture)
