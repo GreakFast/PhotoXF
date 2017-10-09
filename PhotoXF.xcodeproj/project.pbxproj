@@ -135,6 +135,10 @@
 		3BDBFF081F6F59BD00F92898 /* お守り.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BDBFEEF1F6F59BD00F92898 /* お守り.png */; };
 		3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE278791EDAC807008E31A9 /* NextViewController.swift */; };
 		3BE480F01EE24D11002620CB /* くるくるEX.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE480EF1EE24D11002620CB /* くるくるEX.png */; };
+		3BF2DCB71F8B48380045FA74 /* Cammm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8501F81F8B09FB005BE42C /* Cammm.png */; };
+		3BF2DCB81F8B483C0045FA74 /* Stampred.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE76B221F8B18C30091036F /* Stampred.png */; };
+		3BF2DCBA1F8B49F30045FA74 /* back_Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2DCB91F8B49EC0045FA74 /* back_Back.png */; };
+		3BF2DCBC1F8B4C1C0045FA74 /* SerectStampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2DCBB1F8B4C1C0045FA74 /* SerectStampViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +295,8 @@
 		3BE278791EDAC807008E31A9 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		3BE480EF1EE24D11002620CB /* くるくるEX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "くるくるEX.png"; sourceTree = "<group>"; };
 		3BE76B221F8B18C30091036F /* Stampred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stampred.png; sourceTree = "<group>"; };
+		3BF2DCB91F8B49EC0045FA74 /* back_Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_Back.png; sourceTree = "<group>"; };
+		3BF2DCBB1F8B4C1C0045FA74 /* SerectStampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerectStampViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +382,7 @@
 				3B6FC34E1ED8126D00F37963 /* ViewController.swift */,
 				3B6FC3501ED8126D00F37963 /* Main.storyboard */,
 				3B6FC3531ED8126E00F37963 /* Assets.xcassets */,
+				3BF2DCB91F8B49EC0045FA74 /* back_Back.png */,
 				3BE76B221F8B18C30091036F /* Stampred.png */,
 				3B8501F81F8B09FB005BE42C /* Cammm.png */,
 				3BDBFED71F6F59BD00F92898 /* 水泳1.png */,
@@ -478,6 +485,7 @@
 				3B8746F11F6D628D00BEC9BF /* NewViewController.swift */,
 				3B1EA2411F6DFD700076A832 /* StampTeste.swift */,
 				3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */,
+				3BF2DCBB1F8B4C1C0045FA74 /* SerectStampViewController.swift */,
 			);
 			path = PhotoXF;
 			sourceTree = "<group>";
@@ -672,6 +680,7 @@
 				3B4EE8E41EE2969E00AE42B1 /* 雷.png in Resources */,
 				3B22C6BA1F0A38E0009FADAC /* 液晶破損.jpg in Resources */,
 				3B08CC751F64FF2300B2FFAD /* Copy.png in Resources */,
+				3BF2DCB71F8B48380045FA74 /* Cammm.png in Resources */,
 				3BDBFF071F6F59BD00F92898 /* 対処.png in Resources */,
 				3B19C6EC1F6E781600E6C8B1 /* 音符4.png in Resources */,
 				3B2AC0951EDA994E00B8E10B /* kemuri.png in Resources */,
@@ -691,6 +700,7 @@
 				3B2AC0981EDA994E00B8E10B /* ビックリマーク.png in Resources */,
 				3BBACB8E1F488247004468B5 /* icon.png in Resources */,
 				3B19C6F71F6E781600E6C8B1 /* 傘4.png in Resources */,
+				3BF2DCBA1F8B49F30045FA74 /* back_Back.png in Resources */,
 				3B19C6F51F6E781600E6C8B1 /* 傘2.png in Resources */,
 				3B6FC3541ED8126E00F37963 /* Assets.xcassets in Resources */,
 				3B19C6F41F6E781600E6C8B1 /* 傘1.png in Resources */,
@@ -701,6 +711,7 @@
 				3BC388A91F0CDC77006C782C /* kibana.png in Resources */,
 				3BDBFEF41F6F59BD00F92898 /* Camera.png in Resources */,
 				3BDBFF001F6F59BD00F92898 /* 車椅子1.png in Resources */,
+				3BF2DCB81F8B483C0045FA74 /* Stampred.png in Resources */,
 				3B2AC0941EDA994E00B8E10B /* honou.png in Resources */,
 				3BDBFEF71F6F59BD00F92898 /* 人3.png in Resources */,
 				3B47C2701EFFABC60072EC4D /* rainbow.png in Resources */,
@@ -756,6 +767,7 @@
 				3B6FC34F1ED8126D00F37963 /* ViewController.swift in Sources */,
 				3B47C26E1EFFA5E10072EC4D /* CityViewController.swift in Sources */,
 				3B1EA2401F6DD6CA0076A832 /* StampViewController.swift in Sources */,
+				3BF2DCBC1F8B4C1C0045FA74 /* SerectStampViewController.swift in Sources */,
 				3B8746F21F6D628D00BEC9BF /* NewViewController.swift in Sources */,
 				3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */,
 				3B99BB6B1F6E889800F791D4 /* StartedViewController.swift in Sources */,
@@ -934,7 +946,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -951,7 +963,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -1,34 +1,24 @@
 //
-//  StartedViewController.swift
+//  SerectStampViewController.swift
 //  PhotoXF
 //
-//  Created by KOTARO on 2017/09/17.
+//  Created by KOTARO on 2017/10/09.
 //  Copyright © 2017年 KOTARO. All rights reserved.
 //
 
 import UIKit
 
+class SerectStampViewController: UIViewController {
+    @IBAction func Backing() {
+        self.dismiss(animated: true, completion: nil)
 
-class StartedViewController: UIViewController {
-    
-    
-    @IBOutlet weak var label : UILabel!
-    
-    
-
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "どちらで編集しますか？"
-        label.font = UIFont(name: "HiraMinProN-W3", size: 20)
-        label.sizeToFit()
-        label.center = self.view.center
-        self.view.addSubview(label)
-        
-    }
-    
 
         // Do any additional setup after loading the view.
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

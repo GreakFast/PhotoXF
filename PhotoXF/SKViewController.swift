@@ -39,7 +39,7 @@ class SKViewController: UIViewController, UIImagePickerControllerDelegate, UINav
             
             present(picker, animated: true, completion: nil)
         } else {
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "エラー：カメラにアクセスができませんでした。", preferredStyle:  UIAlertControllerStyle.alert)
+            let alert: UIAlertController = UIAlertController(title: "エラー", message: "エラー：カメラにアクセスができませんでした。破損の可能性があります。", preferredStyle:  UIAlertControllerStyle.alert)
             
             // ② Actionの設定
             // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
@@ -82,11 +82,7 @@ class SKViewController: UIViewController, UIImagePickerControllerDelegate, UINav
                 
                 
             } else {
-                let storyboard: UIStoryboard = self.storyboard!
-                let tree = storyboard.instantiateViewController(withIdentifier: "tree")
-                present(tree, animated: true, completion: nil)
-                
-                
+print("OKA")
             }
         }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

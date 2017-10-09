@@ -23,14 +23,22 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>カメラにアクセスします。</string>
+	<string>内蔵カメラアクセス</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>保存するためにライブラリにアクセスします。</string>
+	<string>保存</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>ライブラリにアクセスします。</string>
+	<string>ライブラリアクセス</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
 </dict>
 </plist>

@@ -22,13 +22,13 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
 
     
     @IBAction func camera() {
-        let imagePickController: UIImagePickerController = UIImagePickerController()
-        
-        imagePickController.sourceType = UIImagePickerControllerSourceType.photoLibrary
-        imagePickController.delegate = self
-        imagePickController.allowsEditing = true
-        
-        self.present(imagePickController, animated: true, completion: nil)
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let picker = UIImagePickerController()
+            picker.sourceType = .photoLibrary
+            picker.delegate = self
+            picker.allowsEditing = true
+            present(picker, animated: true, completion: nil)
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info:
@@ -39,7 +39,6 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         self.imageView.image = image
         self.imageView.image = image
         self.dismiss(animated: true, completion: nil)
-        
     }
     @IBAction func Back() {
         self.dismiss(animated: true, completion: nil)
