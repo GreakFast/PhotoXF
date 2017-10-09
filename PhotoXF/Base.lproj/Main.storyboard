@@ -708,7 +708,7 @@
                     </view>
                     <connections>
                         <outlet property="DiffelentImageView" destination="TIr-1S-wmh" id="jON-ab-AbF"/>
-                        <segue destination="edj-u9-5aS" kind="modal" identifier="ahiru" id="wre-Dw-cne"/>
+                        <segue destination="edj-u9-5aS" kind="show" identifier="ahiru" id="wre-Dw-cne"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHB-KH-fea" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -786,7 +786,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmR-Z9-x45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2585" y="1746"/>
+            <point key="canvasLocation" x="-3247" y="2128"/>
         </scene>
         <!--Stamp View Controller-->
         <scene sceneID="X7k-9R-cLC">
@@ -1252,7 +1252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAH-II-uKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1666" y="1746"/>
+            <point key="canvasLocation" x="-1222" y="2128"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="b47-No-13W">
@@ -1325,7 +1325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcm-4L-Usl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697" y="1746"/>
+            <point key="canvasLocation" x="1214" y="2128"/>
         </scene>
     </scenes>
     <resources>

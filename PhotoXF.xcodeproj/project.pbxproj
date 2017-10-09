@@ -138,14 +138,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3B6FC35E1ED8126E00F37963 /* PBXContainerItemProxy */ = {
+		3B29D2A01F8B387C00D861AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B6FC3411ED8126D00F37963 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3B6FC3481ED8126D00F37963;
 			remoteInfo = PhotoXF;
 		};
-		3B6FC3691ED8126E00F37963 /* PBXContainerItemProxy */ = {
+		3B6FC35E1ED8126E00F37963 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B6FC3411ED8126D00F37963 /* Project object */;
 			proxyType = 1;
@@ -549,7 +549,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3B6FC36A1ED8126E00F37963 /* PBXTargetDependency */,
+				3B29D2A11F8B387C00D861AF /* PBXTargetDependency */,
 			);
 			name = PhotoXFUITests;
 			productName = PhotoXFUITests;
@@ -785,15 +785,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3B29D2A11F8B387C00D861AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6FC3481ED8126D00F37963 /* PhotoXF */;
+			targetProxy = 3B29D2A01F8B387C00D861AF /* PBXContainerItemProxy */;
+		};
 		3B6FC35F1ED8126E00F37963 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3B6FC3481ED8126D00F37963 /* PhotoXF */;
 			targetProxy = 3B6FC35E1ED8126E00F37963 /* PBXContainerItemProxy */;
-		};
-		3B6FC36A1ED8126E00F37963 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B6FC3481ED8126D00F37963 /* PhotoXF */;
-			targetProxy = 3B6FC3691ED8126E00F37963 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -934,7 +934,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -951,7 +951,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -961,13 +961,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = QCUSDZ23TE;
 				INFOPLIST_FILE = PhotoXFTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoXF.app/PhotoXF";
 			};
@@ -977,13 +976,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = QCUSDZ23TE;
 				INFOPLIST_FILE = PhotoXFTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoXF.app/PhotoXF";
 			};
@@ -998,7 +996,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				PROVISIONING_PROFILE = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = PhotoXF;
 			};
@@ -1013,7 +1012,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXFUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				PROVISIONING_PROFILE = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = PhotoXF;
 			};

@@ -21,7 +21,7 @@ class Stamp: UIImageView, UIGestureRecognizerDelegate {
         return true
     }
     
-    func rotationGesture(_ gesture: UIRotationGestureRecognizer){
+    @objc func rotationGesture(_ gesture: UIRotationGestureRecognizer){
         print("Rotation detected!", terminator: "")
         
         if !isMoving && gesture.state == UIGestureRecognizerState.began {
@@ -41,7 +41,7 @@ class Stamp: UIImageView, UIGestureRecognizerDelegate {
         
     }
     
-    func pinchGesture(_ gesture: UIPinchGestureRecognizer){
+    @objc func pinchGesture(_ gesture: UIPinchGestureRecognizer){
         print("Pinch detected!", terminator: "")
         
         if !isMoving && gesture.state == UIGestureRecognizerState.began {
