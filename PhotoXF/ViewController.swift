@@ -844,6 +844,44 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
 
     }
+    @IBAction func pinch() {
+        let filterImage: CIImage = CIImage(image: originalImage)!
+        filter = CIFilter(name: "CIPinchDistortion")!
+        
+
+        filter.setValue(CIVector(cgPoint: CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)), forKey: "inputCenter")
+        
+
+        filter.setValue(filterImage, forKey: kCIInputImageKey)
+        
+        let ctx = CIContext(options: nil)
+        let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
+        cameraImageView.image = UIImage(cgImage: cgImage!)
+
+    }
+    @IBAction func mozaiku() {
+        let filterImage: CIImage = CIImage(image: originalImage)!
+        filter = CIFilter(name: "CIPixellate")!
+        
+ 
+        filter.setValue(filterImage, forKey: kCIInputImageKey)
+        
+        let ctx = CIContext(options: nil)
+        let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
+        cameraImageView.image = UIImage(cgImage: cgImage!)
+    }
+    @IBAction func shapu() {
+        let filterImage: CIImage = CIImage(image: originalImage)!
+       filter = CIFilter(name:"CIUnsharpMask")!
+        
+
+        filter.setValue(filterImage, forKey: kCIInputImageKey)
+        
+
+        let ctx = CIContext(options: nil)
+        let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
+        cameraImageView.image = UIImage(cgImage: cgImage!)
+    }
         @IBAction func SK(_ sender: UISlider) {
             if (originalImage == nil){
                 let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)

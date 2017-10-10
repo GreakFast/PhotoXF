@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +29,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19W-Po-qKy">
                                 <rect key="frame" x="45" y="20" width="285" height="285"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Fill.png"/>
                                 <connections>
                                     <segue destination="IWi-ax-dhr" kind="show" id="7OL-2u-SsO"/>
@@ -36,7 +37,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-oa-Jdy">
                                 <rect key="frame" x="45" y="362" width="285" height="285"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="c7f06ee3.png"/>
                                 <connections>
                                     <segue destination="f47-ZK-dFf" kind="show" id="pRp-sK-e42"/>
@@ -79,7 +80,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-Af-wUR">
                                 <rect key="frame" x="16" y="20" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="1179.png"/>
                                 <connections>
                                     <action selector="Backing" destination="f47-ZK-dFf" eventType="touchUpInside" id="EwE-8j-NT1"/>
@@ -153,7 +154,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9i-wF-6qU" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
                                 <rect key="frame" x="41" y="228" width="293" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="正方形にリサイズした画像">
                                     <color key="titleColor" red="0.61534569299999997" green="0.0" blue="0.04277100256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,6 +170,9 @@
                                         <color key="value" red="0.0" green="0.61534569299999997" blue="0.071675142110000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="n8S-Dp-aIE" kind="show" id="quJ-We-HCI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -274,14 +278,9 @@
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xio-94-K22">
-                                <rect key="frame" x="0.0" y="337" width="375" height="330"/>
+                                <rect key="frame" x="0.0" y="341" width="375" height="326"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uF9-ti-kiI">
-                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.43638681994818651" green="0.041902702861333831" blue="0.048261627851477931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiJ-qr-cw0" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
                                 <rect key="frame" x="16" y="313" width="0.0" height="50"/>
@@ -299,392 +298,568 @@
                                     <action selector="GXRkaikei" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzQ-eW-DqP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlV-tb-TO6">
-                                <rect key="frame" x="223" y="616" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="images.png"/>
-                                <connections>
-                                    <action selector="ImageBack" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7B-72-R5v"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-eI-pm1">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lM-pG-ylY">
+                                        <rect key="frame" x="0.0" y="0.0" width="4000" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpT-VG-w1Y">
+                                                <rect key="frame" x="0.0" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QpT-VG-w1Y" secondAttribute="height" multiplier="15:11" id="owN-Kp-AWC"/>
+                                                </constraints>
+                                                <state key="normal" image="１.JPG"/>
+                                                <connections>
+                                                    <action selector="shapu" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbB-3T-BeQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5G-Ux-fow">
+                                                <rect key="frame" x="158" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="n5G-Ux-fow" secondAttribute="height" multiplier="15:11" id="dwM-B7-jZ1"/>
+                                                </constraints>
+                                                <state key="normal" image="２.JPG"/>
+                                                <connections>
+                                                    <action selector="pinch" destination="BYZ-38-t0r" eventType="touchUpInside" id="psg-7I-0bg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fY-65-Lmx">
+                                                <rect key="frame" x="316" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3fY-65-Lmx" secondAttribute="height" multiplier="15:11" id="fIN-gH-vTX"/>
+                                                </constraints>
+                                                <state key="normal" image="３.JPG"/>
+                                                <connections>
+                                                    <action selector="mozaiku" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fA-uA-DAv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcZ-zt-A8u" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="474" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="KcZ-zt-A8u" secondAttribute="height" multiplier="15:11" id="7Al-oI-GJv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="４.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="jaaajet" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSB-IJ-CoM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoG-oZ-1DX" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="631.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="EoG-oZ-1DX" secondAttribute="height" multiplier="15:11" id="RJh-Iq-BvY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="５.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="NSLogFille" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxs-q7-sZN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r51-zh-Hth" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="789" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="r51-zh-Hth" secondAttribute="height" multiplier="15:11" id="PUr-A5-mTR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="６.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="LiteUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiv-yI-y8C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfK-pa-Agc" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="946.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QfK-pa-Agc" secondAttribute="height" multiplier="15:11" id="41L-i0-f2C"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="７.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fE-is-taG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-2V-6ge" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="1104" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="TL6-2V-6ge" secondAttribute="height" multiplier="15:11" id="OlO-HZ-DSy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="８.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="makkurokurosuke" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFn-c0-ege"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R10-fp-Kcs" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="1261.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="R10-fp-Kcs" secondAttribute="height" multiplier="15:11" id="PeJ-vR-SC4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="９.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ddda" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIP-B8-JY4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJC-nS-zx7" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="1419" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="oJC-nS-zx7" secondAttribute="height" multiplier="15:11" id="1X2-DV-rDB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１０.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="gis" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNA-hK-8dG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-Fs-09a" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="1575" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YOb-Fs-09a" secondAttribute="height" multiplier="15:11" id="DRU-05-HVM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１１.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sekand" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbL-Nd-aM5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B45-MX-OPI" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="1732.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="B45-MX-OPI" secondAttribute="height" multiplier="15:11" id="Har-jD-6Kh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１２.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="kaosssss" destination="BYZ-38-t0r" eventType="touchUpInside" id="1i3-Fb-LhQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27o-qN-GKP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="1892.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="27o-qN-GKP" secondAttribute="height" multiplier="15:11" id="ZsT-Yt-XRc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１３.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="exz" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTd-cN-tVf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-Xw-hjP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="2050.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fYD-Xw-hjP" secondAttribute="height" multiplier="15:11" id="nC9-7I-FrF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１４.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxO-ix-F3W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN7-Vf-f7z" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="2208.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="HN7-Vf-f7z" secondAttribute="height" multiplier="15:11" id="M5g-e6-466"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１５.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="inputbox" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxR-nM-D3n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAF-W8-2Yn" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="2366.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cAF-W8-2Yn" secondAttribute="height" multiplier="15:11" id="vnW-I3-kGX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１６.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="yyayayyayayayyayayayayayayahahhahhahhahhahahhaahhahahahahahhahahahahhahah" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fnp-FE-4z1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtd-bD-BU2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="2524.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gtd-bD-BU2" secondAttribute="height" multiplier="15:11" id="psH-nT-F4A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１７.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="hahhahhaha" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWT-bq-Y0D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-0P-A1M" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="2682.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="t4j-0P-A1M" secondAttribute="height" multiplier="15:11" id="PjI-o9-14F"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１８.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="LiteDown" destination="BYZ-38-t0r" eventType="touchUpInside" id="85R-pP-mwA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV6-Qn-NXz" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="2840.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uV6-Qn-NXz" secondAttribute="height" multiplier="15:11" id="Tmp-5m-zBV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="１９.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="msgbox" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkL-iR-fhl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-Ri-0bO" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="2998.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="6N7-Ri-0bO" secondAttribute="height" multiplier="15:11" id="UgV-8Y-9QQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="２０.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cvb" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ7-Fh-sWy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-On-nq2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="3156.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="f4h-On-nq2" secondAttribute="height" multiplier="15:11" id="baz-v1-lyP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="２１.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sikisaituyoi" destination="BYZ-38-t0r" eventType="touchUpInside" id="UID-uz-Q4w"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-hw-yLa" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="3314.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="oF5-hw-yLa" secondAttribute="height" multiplier="15:11" id="eHk-JN-Odp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="２２.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="gsrgsr" destination="BYZ-38-t0r" eventType="touchUpInside" id="3TU-6e-gVM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-iz-CuE" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="3472.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ow8-iz-CuE" secondAttribute="height" multiplier="15:11" id="aSM-of-mH1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="２３.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="JetStaraaaaaaaaa" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWI-cL-syj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-4X-sm2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
+                                                <rect key="frame" x="3630.5" y="8" width="150" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cnf-4X-sm2" secondAttribute="height" multiplier="15:11" id="PCh-Ha-sKm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <state key="normal" image="２４.JPG">
+                                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="hahhhhhhahhhahhahahahah" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pf-q3-Upa"/>
+                                                </connections>
+                                            </button>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-0.5" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="UfL-qJ-5MA">
+                                                <rect key="frame" x="3801.5" y="48" width="190" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="UfL-qJ-5MA" secondAttribute="height" multiplier="98:15" id="hBY-T1-Z0t"/>
+                                                    <constraint firstAttribute="width" secondItem="UfL-qJ-5MA" secondAttribute="height" multiplier="31:5" id="oqN-Ql-bao"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="SK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taJ-dG-4Jz"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="n5G-Ux-fow" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="0g4-PN-QnG"/>
+                                            <constraint firstItem="fYD-Xw-hjP" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="0pw-Fd-EtP"/>
+                                            <constraint firstAttribute="bottom" secondItem="TL6-2V-6ge" secondAttribute="bottom" constant="10" id="1iW-KU-s9I"/>
+                                            <constraint firstAttribute="bottom" secondItem="QpT-VG-w1Y" secondAttribute="bottom" constant="10" id="4m0-Jb-iRU"/>
+                                            <constraint firstAttribute="bottom" secondItem="27o-qN-GKP" secondAttribute="bottom" constant="10" id="5LX-I7-pnu"/>
+                                            <constraint firstItem="oF5-hw-yLa" firstAttribute="leading" secondItem="f4h-On-nq2" secondAttribute="trailing" constant="8" id="5uA-kF-uM5"/>
+                                            <constraint firstItem="27o-qN-GKP" firstAttribute="leading" secondItem="B45-MX-OPI" secondAttribute="trailing" constant="10" id="6ai-qb-c9P"/>
+                                            <constraint firstItem="t4j-0P-A1M" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="7Nv-Tv-rlG"/>
+                                            <constraint firstItem="oJC-nS-zx7" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="7Tm-d6-qWu"/>
+                                            <constraint firstItem="HN7-Vf-f7z" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="BJb-go-el6"/>
+                                            <constraint firstAttribute="bottom" secondItem="YOb-Fs-09a" secondAttribute="bottom" constant="10" id="BSd-ew-Xys"/>
+                                            <constraint firstItem="n5G-Ux-fow" firstAttribute="leading" secondItem="QpT-VG-w1Y" secondAttribute="trailing" constant="8" id="Bd1-B9-qB7"/>
+                                            <constraint firstAttribute="bottom" secondItem="f4h-On-nq2" secondAttribute="bottom" constant="10" id="CQw-cw-IaY"/>
+                                            <constraint firstItem="gtd-bD-BU2" firstAttribute="leading" secondItem="cAF-W8-2Yn" secondAttribute="trailing" constant="8" id="D2Y-VF-E20"/>
+                                            <constraint firstAttribute="bottom" secondItem="oF5-hw-yLa" secondAttribute="bottom" constant="10" id="FH8-GX-bYW"/>
+                                            <constraint firstItem="cnf-4X-sm2" firstAttribute="leading" secondItem="Ow8-iz-CuE" secondAttribute="trailing" constant="8" id="Ha8-7p-Ic5"/>
+                                            <constraint firstAttribute="bottom" secondItem="n5G-Ux-fow" secondAttribute="bottom" constant="10" id="JOE-pF-IDs"/>
+                                            <constraint firstItem="R10-fp-Kcs" firstAttribute="leading" secondItem="TL6-2V-6ge" secondAttribute="trailing" constant="8" id="MCE-p5-Y31"/>
+                                            <constraint firstAttribute="bottom" secondItem="cnf-4X-sm2" secondAttribute="bottom" constant="10" id="MWo-Ez-BKZ"/>
+                                            <constraint firstItem="f4h-On-nq2" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="MuP-sa-VSd"/>
+                                            <constraint firstAttribute="bottom" secondItem="gtd-bD-BU2" secondAttribute="bottom" constant="10" id="Ne3-tg-xLI"/>
+                                            <constraint firstItem="YOb-Fs-09a" firstAttribute="leading" secondItem="oJC-nS-zx7" secondAttribute="trailing" constant="6.5" id="OEL-5O-NB1"/>
+                                            <constraint firstAttribute="bottom" secondItem="fYD-Xw-hjP" secondAttribute="bottom" constant="10" id="PuW-54-eoU"/>
+                                            <constraint firstItem="cnf-4X-sm2" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="QE2-Kq-6zV"/>
+                                            <constraint firstItem="6N7-Ri-0bO" firstAttribute="leading" secondItem="uV6-Qn-NXz" secondAttribute="trailing" constant="8" id="S7V-hf-BUl"/>
+                                            <constraint firstItem="6N7-Ri-0bO" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="SRB-ad-ZB9"/>
+                                            <constraint firstItem="Ow8-iz-CuE" firstAttribute="leading" secondItem="oF5-hw-yLa" secondAttribute="trailing" constant="8" id="Sps-XM-KAN"/>
+                                            <constraint firstAttribute="bottom" secondItem="B45-MX-OPI" secondAttribute="bottom" constant="10" id="T2p-vi-JAq"/>
+                                            <constraint firstAttribute="bottom" secondItem="r51-zh-Hth" secondAttribute="bottom" constant="10" id="TvE-zj-P1S"/>
+                                            <constraint firstItem="oJC-nS-zx7" firstAttribute="leading" secondItem="R10-fp-Kcs" secondAttribute="trailing" constant="8" id="UYm-PC-Gvl"/>
+                                            <constraint firstItem="fYD-Xw-hjP" firstAttribute="leading" secondItem="27o-qN-GKP" secondAttribute="trailing" constant="8" id="Ug0-uW-FQr"/>
+                                            <constraint firstItem="Ow8-iz-CuE" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="VFO-bq-Jmq"/>
+                                            <constraint firstItem="uV6-Qn-NXz" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="VzK-8S-AUI"/>
+                                            <constraint firstItem="B45-MX-OPI" firstAttribute="leading" secondItem="YOb-Fs-09a" secondAttribute="trailing" constant="8" id="WQO-BO-rYl"/>
+                                            <constraint firstItem="KcZ-zt-A8u" firstAttribute="leading" secondItem="3fY-65-Lmx" secondAttribute="trailing" constant="8" id="Wf2-3D-BJ3"/>
+                                            <constraint firstItem="t4j-0P-A1M" firstAttribute="leading" secondItem="gtd-bD-BU2" secondAttribute="trailing" constant="8" id="X9k-nz-Uc0"/>
+                                            <constraint firstItem="3fY-65-Lmx" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="YUA-fC-eYu"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ow8-iz-CuE" secondAttribute="bottom" constant="10" id="YoQ-v8-MXb"/>
+                                            <constraint firstAttribute="bottom" secondItem="t4j-0P-A1M" secondAttribute="bottom" constant="10" id="ZWa-xW-F6H"/>
+                                            <constraint firstItem="cAF-W8-2Yn" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="aDl-dh-Sjo"/>
+                                            <constraint firstItem="HN7-Vf-f7z" firstAttribute="leading" secondItem="fYD-Xw-hjP" secondAttribute="trailing" constant="8" id="ar6-Sg-BFA"/>
+                                            <constraint firstItem="uV6-Qn-NXz" firstAttribute="leading" secondItem="t4j-0P-A1M" secondAttribute="trailing" constant="8" id="atu-fd-cUm"/>
+                                            <constraint firstItem="f4h-On-nq2" firstAttribute="leading" secondItem="6N7-Ri-0bO" secondAttribute="trailing" constant="8" id="bx0-0N-9XL"/>
+                                            <constraint firstAttribute="bottom" secondItem="EoG-oZ-1DX" secondAttribute="bottom" constant="10" id="ch5-76-2G2"/>
+                                            <constraint firstItem="UfL-qJ-5MA" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="48" id="cjH-ty-Iqd"/>
+                                            <constraint firstItem="B45-MX-OPI" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="dgG-em-xlB"/>
+                                            <constraint firstItem="r51-zh-Hth" firstAttribute="leading" secondItem="EoG-oZ-1DX" secondAttribute="trailing" constant="8" id="fGD-hr-R9M"/>
+                                            <constraint firstItem="QfK-pa-Agc" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="g3e-Pt-6ZZ"/>
+                                            <constraint firstItem="TL6-2V-6ge" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="gOw-Yp-3W0"/>
+                                            <constraint firstItem="UfL-qJ-5MA" firstAttribute="leading" secondItem="cnf-4X-sm2" secondAttribute="trailing" constant="23" id="i0q-8t-WxY"/>
+                                            <constraint firstItem="27o-qN-GKP" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="jTv-qP-J87"/>
+                                            <constraint firstItem="QpT-VG-w1Y" firstAttribute="leading" secondItem="5lM-pG-ylY" secondAttribute="leading" id="ksw-mN-86z"/>
+                                            <constraint firstItem="3fY-65-Lmx" firstAttribute="leading" secondItem="n5G-Ux-fow" secondAttribute="trailing" constant="8" id="lCN-WE-RQc"/>
+                                            <constraint firstItem="cAF-W8-2Yn" firstAttribute="leading" secondItem="HN7-Vf-f7z" secondAttribute="trailing" constant="8" id="mSb-Tl-k9e"/>
+                                            <constraint firstAttribute="bottom" secondItem="QfK-pa-Agc" secondAttribute="bottom" constant="10" id="neg-Kd-a7B"/>
+                                            <constraint firstItem="UfL-qJ-5MA" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="48" id="oTp-oV-qMi"/>
+                                            <constraint firstItem="EoG-oZ-1DX" firstAttribute="leading" secondItem="KcZ-zt-A8u" secondAttribute="trailing" constant="8" id="ogI-4K-toX"/>
+                                            <constraint firstAttribute="bottom" secondItem="UfL-qJ-5MA" secondAttribute="bottom" constant="50" id="pop-b3-8iQ"/>
+                                            <constraint firstItem="EoG-oZ-1DX" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="ptw-vF-ekc"/>
+                                            <constraint firstAttribute="bottom" secondItem="UfL-qJ-5MA" secondAttribute="bottom" constant="50" id="qGy-a4-uH3"/>
+                                            <constraint firstItem="YOb-Fs-09a" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="qSc-9g-KAX"/>
+                                            <constraint firstItem="oF5-hw-yLa" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="qm3-eY-6zs"/>
+                                            <constraint firstItem="KcZ-zt-A8u" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="qzJ-GW-aze"/>
+                                            <constraint firstItem="QpT-VG-w1Y" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="rJ6-Do-UD4"/>
+                                            <constraint firstItem="r51-zh-Hth" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="rRQ-dy-lsN"/>
+                                            <constraint firstItem="R10-fp-Kcs" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="rk9-5f-Q4R"/>
+                                            <constraint firstAttribute="bottom" secondItem="3fY-65-Lmx" secondAttribute="bottom" constant="10" id="s7k-sh-HM1"/>
+                                            <constraint firstAttribute="bottom" secondItem="KcZ-zt-A8u" secondAttribute="bottom" constant="10" id="sL3-C7-8xx"/>
+                                            <constraint firstAttribute="bottom" secondItem="uV6-Qn-NXz" secondAttribute="bottom" constant="10" id="sZh-Qd-43w"/>
+                                            <constraint firstAttribute="bottom" secondItem="R10-fp-Kcs" secondAttribute="bottom" constant="10" id="snN-xV-8bR"/>
+                                            <constraint firstItem="TL6-2V-6ge" firstAttribute="leading" secondItem="QfK-pa-Agc" secondAttribute="trailing" constant="8" id="t9a-d6-zXZ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="4000" id="tWo-EC-X7a"/>
+                                            <constraint firstItem="QfK-pa-Agc" firstAttribute="leading" secondItem="r51-zh-Hth" secondAttribute="trailing" constant="8" id="tgW-Ou-X0R"/>
+                                            <constraint firstItem="gtd-bD-BU2" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="vBW-Ne-aDe"/>
+                                            <constraint firstAttribute="bottom" secondItem="6N7-Ri-0bO" secondAttribute="bottom" constant="10" id="vba-Fb-TQV"/>
+                                            <constraint firstAttribute="bottom" secondItem="HN7-Vf-f7z" secondAttribute="bottom" constant="10" id="w4c-SY-7nR"/>
+                                            <constraint firstAttribute="bottom" secondItem="cAF-W8-2Yn" secondAttribute="bottom" constant="10" id="xqX-rI-qA4"/>
+                                            <constraint firstAttribute="bottom" secondItem="oJC-nS-zx7" secondAttribute="bottom" constant="10" id="z8N-GT-n2h"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5lM-pG-ylY" firstAttribute="leading" secondItem="uWf-eI-pm1" secondAttribute="leading" id="1FB-dp-k3Z"/>
+                                    <constraint firstAttribute="height" constant="128" id="Gez-8a-xDl"/>
+                                    <constraint firstAttribute="trailing" secondItem="5lM-pG-ylY" secondAttribute="trailing" id="Gs4-hy-7iX"/>
+                                    <constraint firstItem="5lM-pG-ylY" firstAttribute="top" secondItem="uWf-eI-pm1" secondAttribute="top" id="ZNB-sn-anF"/>
+                                    <constraint firstAttribute="bottom" secondItem="5lM-pG-ylY" secondAttribute="bottom" id="cZL-zS-OAh"/>
+                                    <constraint firstItem="5lM-pG-ylY" firstAttribute="height" secondItem="uWf-eI-pm1" secondAttribute="height" id="jvv-kX-kzj"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uF9-ti-kiI">
+                                <rect key="frame" x="0.0" y="483" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.43638681994818651" green="0.041902702861333831" blue="0.048261627851477931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py3-7t-kT6">
-                                <rect key="frame" x="314" y="616" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="313" y="489" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="Copy.png"/>
                                 <connections>
                                     <action selector="savePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="l81-YQ-1YF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUc-Bu-EMg">
-                                <rect key="frame" x="16" y="616" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_Back.png"/>
-                                <connections>
-                                    <action selector="homes" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFH-k4-tKz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfK-pa-Agc" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="160" y="415" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="色彩増加.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="colorFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fE-is-taG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r51-zh-Hth" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="97" y="415" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="明るい.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="LiteUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiv-yI-y8C"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-0P-A1M" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="223" y="545" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="暗い.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="LiteDown" destination="BYZ-38-t0r" eventType="touchUpInside" id="85R-pP-mwA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-On-nq2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="97" y="501" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="幻覚.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="sikisaituyoi" destination="BYZ-38-t0r" eventType="touchUpInside" id="UID-uz-Q4w"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-2V-6ge" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="223" y="415" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="白黒.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makkurokurosuke" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFn-c0-ege"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-Fs-09a" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="97" y="458" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="セピア.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="sekand" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbL-Nd-aM5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV6-Qn-NXz" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="286" y="501" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="反転.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="msgbox" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkL-iR-fhl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN7-Vf-f7z" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="34" y="544" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="偽色.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="inputbox" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxR-nM-D3n"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R10-fp-Kcs" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="286" y="415" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="液晶破損.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="ddda" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIP-B8-JY4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-Ri-0bO" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="34" y="501" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="真っ赤な絵.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="cvb" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ7-Fh-sWy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJC-nS-zx7" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="34" y="458" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="ピンク色.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="gis" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNA-hK-8dG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-hw-yLa" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="160" y="501" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="黄緑色.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="gsrgsr" destination="BYZ-38-t0r" eventType="touchUpInside" id="3TU-6e-gVM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtd-bD-BU2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="160" y="544" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="青色.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="hahhahhaha" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWT-bq-Y0D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B45-MX-OPI" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="160" y="458" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="赤色.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="kaosssss" destination="BYZ-38-t0r" eventType="touchUpInside" id="1i3-Fb-LhQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-4X-sm2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="286" y="544" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="ブラー.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="hahhhhhhahhhahhahahahah" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pf-q3-Upa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAF-W8-2Yn" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="97" y="545" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="緑反転.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="yyayayyayayayyayayayayayayahahhahhahhahhahahhaahhahahahahahhahahahahhahah" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fnp-FE-4z1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-Xw-hjP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="286" y="458" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="素朴.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxO-ix-F3W"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoG-oZ-1DX" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="34" y="415" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="黄金.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="NSLogFille" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxs-q7-sZN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-iz-CuE" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="223" y="502" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="暑い場所.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="JetStaraaaaaaaaa" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWI-cL-syj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27o-qN-GKP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="223" y="458" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="ガラパゴス.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="exz" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTd-cN-tVf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcZ-zt-A8u" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="34" y="372" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" image="白黒反転.jpg">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="jaaajet" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSB-IJ-CoM"/>
-                                </connections>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-0.5" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="UfL-qJ-5MA">
-                                <rect key="frame" x="99" y="374" width="248" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="SK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taJ-dG-4Jz"/>
-                                </connections>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-yD-d41">
-                                <rect key="frame" x="107" y="616" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="165" y="489" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="LAL.png"/>
                                 <connections>
                                     <action selector="snsPhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTp-nS-Ffm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUc-Bu-EMg">
+                                <rect key="frame" x="16" y="489" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" image="back_Back.png"/>
+                                <connections>
+                                    <action selector="homes" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFH-k4-tKz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uWf-eI-pm1" secondAttribute="bottom" id="RAe-su-tyN"/>
+                            <constraint firstAttribute="trailing" secondItem="uWf-eI-pm1" secondAttribute="trailing" id="XW0-4Q-Tpa"/>
+                            <constraint firstItem="uWf-eI-pm1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dDj-gI-Biu"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cameraImageView" destination="Dra-X5-eHm" id="g8V-ti-HVd"/>
@@ -733,7 +908,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHB-KH-fea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5225" y="38"/>
+            <point key="canvasLocation" x="4458" y="865"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="wsl-lJ-4qr">
@@ -822,7 +997,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6P1-Uy-WQc">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FGa-Fb-vBg">
@@ -858,7 +1033,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW8-h8-jnh" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
                                 <rect key="frame" x="155" y="621" width="65" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="0.6141995716737636" blue="0.6547696662410003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="戻る">
                                     <color key="titleColor" red="0.61534569300518127" green="0.0" blue="0.042771002558551027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1194,7 +1369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfU-Jd-sKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4430" y="45"/>
+            <point key="canvasLocation" x="5612" y="717"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="cf7-eC-Hn0">
@@ -1394,6 +1569,9 @@
                                 <rect key="frame" x="160" y="523" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="Stampred.png"/>
+                                <connections>
+                                    <segue destination="ekP-sd-LMf" kind="show" id="coC-UA-Wog"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiO-2f-Iu5">
                                 <rect key="frame" x="286" y="523" width="55" height="55"/>
@@ -1443,43 +1621,45 @@
         <image name="hibi.png" width="600" height="600"/>
         <image name="honou.png" width="600" height="600"/>
         <image name="hukidasi.png" width="500" height="499"/>
-        <image name="images.png" width="500" height="500"/>
         <image name="kemuri.png" width="1216" height="1216"/>
         <image name="kibana.png" width="500" height="500"/>
         <image name="rainbow.png" width="286" height="263"/>
         <image name="sakura.png" width="4224" height="2376"/>
         <image name="sakurabana.png" width="4224" height="2376"/>
         <image name="ごめん.png" width="1024" height="768"/>
-        <image name="ガラパゴス.jpg" width="50" height="50"/>
         <image name="キラキラ.png" width="600" height="600"/>
-        <image name="セピア.jpg" width="50" height="50"/>
         <image name="ビックリマーク.png" width="600" height="600"/>
-        <image name="ピンク色.jpg" width="50" height="50"/>
-        <image name="ブラー.jpg" width="50" height="50"/>
-        <image name="偽色.jpg" width="50" height="50"/>
-        <image name="反転.jpg" width="50" height="50"/>
-        <image name="幻覚.jpg" width="50" height="50"/>
         <image name="新聞画像.jpg" width="50" height="50"/>
-        <image name="明るい.jpg" width="50" height="50"/>
         <image name="星一つ.png" width="577" height="577"/>
-        <image name="暑い場所.jpg" width="50" height="50"/>
-        <image name="暗い.jpg" width="50" height="50"/>
-        <image name="液晶破損.jpg" width="50" height="50"/>
-        <image name="白黒.jpg" width="50" height="50"/>
-        <image name="白黒反転.jpg" width="50" height="50"/>
-        <image name="真っ赤な絵.jpg" width="50" height="50"/>
-        <image name="素朴.jpg" width="50" height="50"/>
-        <image name="緑反転.jpg" width="50" height="50"/>
-        <image name="色彩増加.jpg" width="50" height="50"/>
-        <image name="赤色.jpg" width="50" height="50"/>
         <image name="雷.png" width="500" height="500"/>
         <image name="電球.png" width="400" height="400"/>
-        <image name="青色.jpg" width="50" height="50"/>
         <image name="頭悪い.png" width="500" height="500"/>
-        <image name="黄緑色.jpg" width="50" height="50"/>
-        <image name="黄金.jpg" width="50" height="50"/>
+        <image name="１.JPG" width="636" height="480"/>
+        <image name="１０.JPG" width="636" height="480"/>
+        <image name="１１.JPG" width="636" height="480"/>
+        <image name="１２.JPG" width="636" height="480"/>
+        <image name="１３.JPG" width="64" height="48"/>
+        <image name="１４.JPG" width="636" height="480"/>
+        <image name="１５.JPG" width="636" height="480"/>
+        <image name="１６.JPG" width="636" height="480"/>
+        <image name="１７.JPG" width="636" height="480"/>
+        <image name="１８.JPG" width="636" height="480"/>
+        <image name="１９.JPG" width="636" height="480"/>
+        <image name="２.JPG" width="735" height="570"/>
+        <image name="２０.JPG" width="636" height="480"/>
+        <image name="２１.JPG" width="636" height="480"/>
+        <image name="２２.JPG" width="636" height="480"/>
+        <image name="２３.JPG" width="636" height="480"/>
+        <image name="２４.JPG" width="724" height="568"/>
+        <image name="３.JPG" width="644" height="488"/>
+        <image name="４.JPG" width="636" height="480"/>
+        <image name="５.JPG" width="636" height="480"/>
+        <image name="６.JPG" width="636" height="480"/>
+        <image name="７.JPG" width="636" height="480"/>
+        <image name="８.JPG" width="636" height="480"/>
+        <image name="９.JPG" width="636" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ujb-Jn-bCY"/>
+        <segue reference="76d-dG-60Y"/>
     </inferredMetricsTieBreakers>
 </document>
