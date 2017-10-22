@@ -4,9 +4,6 @@ import Accounts
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    
-    @IBOutlet var kurukuruImageView: UIImageView!
-    
     @IBOutlet var cameraImageView: UIImageView!
     @IBOutlet var Defo: UIImageView!
     var data = NSData()
@@ -89,6 +86,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         originalImage = UIImage(data:imageDate as Data)
         
     }
+    
+    //
     @IBAction func Homes() {
         self.dismiss(animated: true, completion: nil)
     }
@@ -712,7 +711,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     }
     }
-    @IBAction func jaaajet() {
+    @IBAction func jaaajeaaaaaaaaat() {
         if (originalImage == nil){
             let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
             
