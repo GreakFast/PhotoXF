@@ -5,7 +5,6 @@ import Accounts
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var cameraImageView: UIImageView!
-    @IBOutlet var Defo: UIImageView!
     var data = NSData()
     var originalImage: UIImage!
     var filter: CIFilter!
@@ -25,33 +24,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         print("original\(originalImage)")
 
     }
-    @IBAction func takePhoto() {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-        let picker = UIImagePickerController()
-        picker.sourceType = .camera
-        picker.delegate = self
-        picker.allowsEditing = true
-        
-        present(picker, animated: true, completion: nil)
-    } else {
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "エラー：カメラにアクセスができませんでした。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-    }
-}
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         cameraImageView.image = info[UIImagePickerControllerEditedImage] as? UIImage
         originalImage = cameraImageView.image
@@ -64,53 +37,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func savePhoto() {
         UIImageWriteToSavedPhotosAlbum(cameraImageView.image!, nil, nil, nil)
         let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
-        
-        // ② Actionの設定
-        // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-        // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-        // OKボタン
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-            // ボタンが押された時の処理を書く（クロージャ実装）
             (action: UIAlertAction!) -> Void in
             print("OK")
         })
         alert.addAction(defaultAction)
-        
-        // ④ Alertを表示
         present(alert, animated: true, completion: nil)
-        
+    }
 
-    }
-    @IBAction func serect () {
-        let imageDate:NSData = UserDefaults.standard.object(forKey: "AS") as! NSData
-        originalImage = UIImage(data:imageDate as Data)
-        
-    }
-    
-    //
-    @IBAction func Homes() {
-        self.dismiss(animated: true, completion: nil)
-    }
-    @IBAction func colorFilter() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
+    @IBAction func colorIncrease() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIColorControls")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -122,17 +57,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
     }
-    }
-    @IBAction func openAlbum() {
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            let picker = UIImagePickerController()
-            picker.sourceType = .photoLibrary
-            picker.delegate = self
-            picker.allowsEditing = true
-            present(picker, animated: true, completion: nil)
-            
-        }
-    }
+
     @IBAction func snsPhoto() {
         let shareText = "#PhotoXF"
         let shareImage = cameraImageView.image!
@@ -142,59 +67,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         activityViewController.excludedActivityTypes = excludedActivityTypes
         present(activityViewController, animated: true, completion: nil)
     }
-    @IBAction func ImageBack() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
 
-        let filterImage: CIImage = CIImage(image: originalImage)!
-        filter = CIFilter(name: "CIColorControls")!
-        filter.setValue(filterImage, forKey: kCIInputImageKey)
-        filter.setValue(1.0, forKey: "inputSaturation")
-        filter.setValue(0.0, forKey: "inputBrightness")
-        filter.setValue(1.0, forKey: "inputContrast")
-        let ctx = CIContext(options: nil)
-        let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
-        cameraImageView.image = UIImage(cgImage: cgImage!)
-    }
-    }
-    @IBAction func LiteDown() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    @IBAction func darker() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIColorControls")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -206,30 +80,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-
-    }
-    @IBAction func LiteUp() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    
+    @IBAction func brighter() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIColorControls")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -241,35 +93,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
 
-    }
-    @IBAction func NextView() {
-            let storyboard: UIStoryboard = self.storyboard!
-            let Kbs = storyboard.instantiateViewController(withIdentifier: "Kbs")
-            present(Kbs, animated: true, completion: nil)
-    }
-    @IBAction func sikisaituyoi() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    @IBAction func sawayaka() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIColorControls")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -281,30 +106,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-
-    }
-    @IBAction func makkurokurosuke() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    
+    @IBAction func whiteAndBlack() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIColorControls")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -316,29 +119,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-
-    }
-    @IBAction func sekand() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    
+    @IBAction func falseColor() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CISepiaTone")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -347,64 +129,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
 
-    }
-    @IBAction func GXRkaikei() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
-        let filterImage: CIImage = CIImage(image: originalImage)!
-        filter = CIFilter(name: "CIColorMonochrome")!
-        filter.setValue(filterImage, forKey: kCIInputImageKey)
-        filter.setValue(CIColor(red: 0.75, green: 0.75, blue: 0.75), forKey: "inputColor")
-        filter.setValue(1.0, forKey: "inputIntensity")
-        
-        let ctx = CIContext(options: nil)
-        let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
-        cameraImageView.image = UIImage(cgImage: cgImage!)
-        }
-        
-
-    }
-    @IBAction func msgbox() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    @IBAction func purpleKyouchou() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIHueAdjust" )!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -414,30 +140,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-
-    }
-    @IBAction func inputbox() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    
+    @IBAction func flaseColor() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIFalseColor" )!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -448,30 +152,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-
-    }
-    @IBAction func exz() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    
+    @IBAction func size() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CILanczosScaleTransform")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -482,29 +164,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-
-    }
-    @IBAction func ddda() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    
+    @IBAction func screenBreaker() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         let filter = CIFilter(name: "CICMYKHalftone")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -513,30 +174,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-
-    }
-    @IBAction func cvb() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
+    
+    @IBAction func enogu() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIColorControls")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -548,30 +187,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-
-    }
-    @IBAction func gis() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-            
+    
+    @IBAction func pink() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CIFalseColor" )!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -582,31 +199,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-        
-
-    }
-    @IBAction func gsrgsr() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-            
+    
+    @IBAction func orange() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CIFalseColor" )!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -617,31 +211,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-        
-
-    }
-    @IBAction func hahhahhaha() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            // ② Actionの設定
-            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
-            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
-            // OKボタン
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            // ④ Alertを表示
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-            
+    
+    @IBAction func yellowPurple() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CIFalseColor" )!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -652,25 +223,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-        
-
-    }
-    @IBAction func kaosssss() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-            
+    
+    @IBAction func purple() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CIFalseColor" )!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -681,26 +235,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-        
-        
-
-    }
-    @IBAction func hahhhhhhahhhahhahahahah() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-
-        
+    
+    @IBAction func blur() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIGaussianBlur" )!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -708,49 +244,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let ctx = CIContext(options: nil)
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
+    }
 
-    }
-    }
-    @IBAction func jaaajeaaaaaaaaat() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-            let filterImage: CIImage = CIImage(image: originalImage)!
-            filter = CIFilter(name: "CIColorInvert" )!
-            filter.setValue(filterImage, forKey: kCIInputImageKey)
-            let ctx = CIContext(options: nil)
-            let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
-            cameraImageView.image = UIImage(cgImage: cgImage!)
-
-
-    }
-    }
-    @IBAction func yyayayyayayayyayayayayayayahahhahhahhahhahahhaahhahahahahahhahahahahhahah() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
-            
-            
+    @IBAction func greenKyouchou() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CIHueAdjust" )!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -760,22 +256,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-
-    }
-    @IBAction func JetStaraaaaaaaaa() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
+    
+    @IBAction func red() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CISepiaTone")!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -783,25 +265,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let ctx = CIContext(options: nil)
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
-
         }
-        
-
-    }
-    @IBAction func NSLogFille() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
+    
+    @IBAction func gold() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CIColorMonochrome")!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -811,25 +277,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let ctx = CIContext(options: nil)
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
-
-        }
-        
-        
-
     }
-    @IBAction func jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj() {
-        if (originalImage == nil){
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-                print("OK")
-            })
-            alert.addAction(defaultAction)
-            
-            present(alert, animated: true, completion: nil)
-            
-            
-        } else {
+    
+    @IBAction func contrast() {
             let filterImage: CIImage = CIImage(image: originalImage)!
             filter = CIFilter(name: "CIColorControls")!
             filter.setValue(filterImage, forKey: kCIInputImageKey)
@@ -841,23 +291,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
             cameraImageView.image = UIImage(cgImage: cgImage!)
         }
-
-    }
     @IBAction func pinch() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIPinchDistortion")!
-        
-
         filter.setValue(CIVector(cgPoint: CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)), forKey: "inputCenter")
-        
-
         filter.setValue(filterImage, forKey: kCIInputImageKey)
         
         let ctx = CIContext(options: nil)
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
-
     }
+    
     @IBAction func mozaiku() {
         let filterImage: CIImage = CIImage(image: originalImage)!
         filter = CIFilter(name: "CIPixellate")!
@@ -869,35 +313,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
     }
-    @IBAction func shapu() {
+    @IBAction func dfault() {
         let filterImage: CIImage = CIImage(image: originalImage)!
        filter = CIFilter(name:"CIUnsharpMask")!
-        
-
         filter.setValue(filterImage, forKey: kCIInputImageKey)
-        
-
         let ctx = CIContext(options: nil)
         let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
         cameraImageView.image = UIImage(cgImage: cgImage!)
     }
-        @IBAction func SK(_ sender: UISlider) {
-            if (originalImage == nil){
-                let alert: UIAlertController = UIAlertController(title: "エラー", message: "画像が選択されていません。「撮影」か「ライブラリ」から選択できます。", preferredStyle:  UIAlertControllerStyle.alert)
-                
-                let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
-                    (action: UIAlertAction!) -> Void in
-                    print("OK")
-                })
-                alert.addAction(defaultAction)
-                
-                present(alert, animated: true, completion: nil)
-                
-                
-            } else {
-                
-
-            
+    
+        @IBAction func slider(_ sender: UISlider) {
                 self.view.backgroundColor = UIColor(red: CGFloat(sender.value), green: CGFloat(sender.value), blue: CGFloat(sender.value), alpha: CGFloat(sender.value))
                 
                     let filterImage: CIImage = CIImage(image: originalImage)!
@@ -914,18 +339,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     cameraImageView.image = UIImage(cgImage: cgImage!)
                             cameraImageView.setNeedsDisplay()
             }
-            }
-    @IBAction func Kaaa() {
-        //次の画面に行く
-        let storyboard: UIStoryboard = self.storyboard!
-        let nextView = storyboard.instantiateViewController(withIdentifier: "nextView")
-        present(nextView, animated: true, completion: nil)
-        //三秒枌
-        RunLoop.main.run(until: Date(timeIntervalSinceNow: 3.0))
-        //帰らない家に帰ろう
-        nextView.performSegue(withIdentifier: "ahiru", sender: nil)
+    
+    @IBAction func nega() {
+            let filterImage: CIImage = CIImage(image: originalImage)!
+            filter = CIFilter(name: "CIColorInvert" )!
+            filter.setValue(filterImage, forKey: kCIInputImageKey)
+            let ctx = CIContext(options: nil)
+            let cgImage = ctx.createCGImage(filter.outputImage!, from: filter.outputImage!.extent)
+            cameraImageView.image = UIImage(cgImage: cgImage!)
+        }
 
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

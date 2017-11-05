@@ -52,7 +52,6 @@
 		3B2AC0991EDA994E00B8E10B /* 電球.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AC0911EDA994E00B8E10B /* 電球.png */; };
 		3B2AC09B1EDA996C00B8E10B /* ブラックスクリーン.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AC09A1EDA996C00B8E10B /* ブラックスクリーン.png */; };
 		3B36E3211F248417008F8DA6 /* ImagePicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B36E3201F248417008F8DA6 /* ImagePicture.png */; };
-		3B47C26E1EFFA5E10072EC4D /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47C26D1EFFA5E10072EC4D /* CityViewController.swift */; };
 		3B47C2701EFFABC60072EC4D /* rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B47C26F1EFFABC60072EC4D /* rainbow.png */; };
 		3B48D3701F0A3B4800528087 /* gaggagagag.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B48D36F1F0A3B4800528087 /* gaggagagag.png */; };
 		3B48D3761F0A3E9E00528087 /* Yazirusi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B48D3721F0A3E9E00528087 /* Yazirusi.png */; };
@@ -140,7 +139,6 @@
 		3BE480F01EE24D11002620CB /* くるくるEX.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE480EF1EE24D11002620CB /* くるくるEX.png */; };
 		3BF2DCB71F8B48380045FA74 /* Cammm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8501F81F8B09FB005BE42C /* Cammm.png */; };
 		3BF2DCB81F8B483C0045FA74 /* Stampred.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE76B221F8B18C30091036F /* Stampred.png */; };
-		3BF2DCBC1F8B4C1C0045FA74 /* SerectStampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2DCBB1F8B4C1C0045FA74 /* SerectStampViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,7 +204,6 @@
 		3B2AC0911EDA994E00B8E10B /* 電球.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "電球.png"; sourceTree = "<group>"; };
 		3B2AC09A1EDA996C00B8E10B /* ブラックスクリーン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ブラックスクリーン.png"; sourceTree = "<group>"; };
 		3B36E3201F248417008F8DA6 /* ImagePicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImagePicture.png; sourceTree = "<group>"; };
-		3B47C26D1EFFA5E10072EC4D /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		3B47C26F1EFFABC60072EC4D /* rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow.png; sourceTree = "<group>"; };
 		3B48D36F1F0A3B4800528087 /* gaggagagag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gaggagagag.png; sourceTree = "<group>"; };
 		3B48D3721F0A3E9E00528087 /* Yazirusi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yazirusi.png; sourceTree = "<group>"; };
@@ -300,7 +297,6 @@
 		3BE480EF1EE24D11002620CB /* くるくるEX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "くるくるEX.png"; sourceTree = "<group>"; };
 		3BE76B221F8B18C30091036F /* Stampred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stampred.png; sourceTree = "<group>"; };
 		3BF2DCB91F8B49EC0045FA74 /* back_Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_Back.png; sourceTree = "<group>"; };
-		3BF2DCBB1F8B4C1C0045FA74 /* SerectStampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerectStampViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,13 +449,11 @@
 				3B2AC0901EDA994E00B8E10B /* ビックリマーク.png */,
 				3B2AC0911EDA994E00B8E10B /* 電球.png */,
 				3BE278791EDAC807008E31A9 /* NextViewController.swift */,
-				3B47C26D1EFFA5E10072EC4D /* CityViewController.swift */,
 				3B7D5E621F5A8B38006779FD /* AKASViewController.swift */,
 				3BC39B721F64E53E00A9C8B0 /* SKViewController.swift */,
 				3B8746F11F6D628D00BEC9BF /* NewViewController.swift */,
 				3B1EA2411F6DFD700076A832 /* StampTeste.swift */,
 				3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */,
-				3BF2DCBB1F8B4C1C0045FA74 /* SerectStampViewController.swift */,
 				3B940C841F8C700A007F0055 /* １.JPG */,
 				3B940C7B1F8C6FFA007F0055 /* ２.JPG */,
 				3B940C8A1F8C7015007F0055 /* ３.JPG */,
@@ -765,9 +759,7 @@
 			files = (
 				3B7D5E631F5A8B38006779FD /* AKASViewController.swift in Sources */,
 				3B6FC34F1ED8126D00F37963 /* ViewController.swift in Sources */,
-				3B47C26E1EFFA5E10072EC4D /* CityViewController.swift in Sources */,
 				3B1EA2401F6DD6CA0076A832 /* StampViewController.swift in Sources */,
-				3BF2DCBC1F8B4C1C0045FA74 /* SerectStampViewController.swift in Sources */,
 				3B8746F21F6D628D00BEC9BF /* NewViewController.swift in Sources */,
 				3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */,
 				3B99BB6B1F6E889800F791D4 /* StartedViewController.swift in Sources */,
@@ -941,7 +933,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QCUSDZ23TE;
 				INFOPLIST_FILE = PhotoXF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -959,7 +951,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QCUSDZ23TE;
 				INFOPLIST_FILE = PhotoXF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TOMATO24SAUCE.PhotoXF;
 				PRODUCT_NAME = "$(TARGET_NAME)";

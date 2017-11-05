@@ -10,21 +10,8 @@ import UIKit
 
 
 class StartedViewController: UIViewController {
-    
-    
-    @IBOutlet weak var label : UILabel!
-    
-    
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "どちらで編集しますか？"
-        label.font = UIFont(name: "HiraMinProN-W3", size: 20)
-        label.sizeToFit()
-        label.center = self.view.center
-        self.view.addSubview(label)
-        
     }
     
 

@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SEt-t9-99e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SEt-t9-99e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="J5J-kL-ykZ">
+            <objects>
+                <viewController id="cpX-YL-96L" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sPD-Rc-3ZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="AKi-XI-eFT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G64-0u-taE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ysz-yv-xGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="716"/>
+        </scene>
         <!--Started View Controller-->
         <scene sceneID="Oc7-a0-6bB">
             <objects>
@@ -22,96 +40,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJK-iD-rVi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-SJ-xnp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19W-Po-qKy">
-                                <rect key="frame" x="45" y="20" width="285" height="285"/>
+                                <rect key="frame" x="110" y="291" width="155" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Fill.png"/>
                                 <connections>
-                                    <segue destination="IWi-ax-dhr" kind="show" id="7OL-2u-SsO"/>
+                                    <segue destination="6Tu-AW-TVg" kind="show" id="o2x-hj-KFp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-oa-Jdy">
-                                <rect key="frame" x="45" y="362" width="285" height="285"/>
+                                <rect key="frame" x="110" y="492" width="155" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="c7f06ee3.png"/>
                                 <connections>
-                                    <segue destination="6Tu-AW-TVg" kind="show" id="kL9-X4-aBi"/>
+                                    <segue destination="IWi-ax-dhr" kind="show" id="gNP-1m-q7e"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="どちらで編集しますか？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-dV-KkR">
-                                <rect key="frame" x="31" y="308" width="313" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.61534569299999997" green="0.0" blue="0.04277100256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" red="0.27860336717904521" green="0.25805686783683884" blue="0.90967049870466321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="label" destination="hUr-dV-KkR" id="6ic-f9-r8x"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ai4-Dl-LJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2128.8000000000002" y="44.527736131934034"/>
-        </scene>
-        <!--Serect Stamp View Controller-->
-        <scene sceneID="OhQ-bA-bH8">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gOT-6u-ep5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="f47-ZK-dFf" customClass="SerectStampViewController" customModule="PhotoXF" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="D9U-Aj-shf"/>
-                        <viewControllerLayoutGuide type="bottom" id="rFw-vE-0kD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lsq-tZ-1nb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9jl-4Z-N9d">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-Af-wUR">
-                                <rect key="frame" x="16" y="20" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="1179.png"/>
-                                <connections>
-                                    <action selector="Backing" destination="f47-ZK-dFf" eventType="touchUpInside" id="EwE-8j-NT1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGi-mP-Wwp" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="41" y="358" width="293" height="80"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="スクリーンショットした画像">
-                                    <color key="titleColor" red="0.61534569299999997" green="0.0" blue="0.04277100256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.61534569299999997" blue="0.071675142110000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="4854" y="2207"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HZh-ch-ggp">
@@ -125,15 +80,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oco-nu-Vj5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-WL-2qk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-WL-2qk">
                                 <rect key="frame" x="41" y="376" width="292" height="271"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.90413529800000003" blue="0.1662026962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBx-KK-XcB">
                                 <rect key="frame" x="16" y="20" width="68" height="68"/>
@@ -160,15 +110,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v7-5M-Tgm" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="262" y="431" width="61" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="229" y="566" width="104" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90413529800000003" blue="0.1662026962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="編集">
-                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.90009528398513794" green="0.14199092984199524" blue="0.33093667030334473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.0"/>
@@ -205,7 +156,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dra-X5-eHm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="486"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xio-94-K22">
                                 <rect key="frame" x="0.0" y="483" width="375" height="184"/>
@@ -225,7 +176,7 @@
                                                 </constraints>
                                                 <state key="normal" image="１.JPG"/>
                                                 <connections>
-                                                    <action selector="shapu" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbB-3T-BeQ"/>
+                                                    <action selector="dfault" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZPU-jL-Ill"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5G-Ux-fow">
@@ -235,7 +186,7 @@
                                                 </constraints>
                                                 <state key="normal" image="２.JPG"/>
                                                 <connections>
-                                                    <action selector="pinch" destination="BYZ-38-t0r" eventType="touchUpInside" id="psg-7I-0bg"/>
+                                                    <action selector="pinch" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDj-bL-YOb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fY-65-Lmx">
@@ -245,7 +196,7 @@
                                                 </constraints>
                                                 <state key="normal" image="３.JPG"/>
                                                 <connections>
-                                                    <action selector="mozaiku" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hh9-Zo-2T3"/>
+                                                    <action selector="mozaiku" destination="BYZ-38-t0r" eventType="touchUpInside" id="4BF-Pw-CKO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcZ-zt-A8u" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -262,6 +213,9 @@
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nega" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCg-yu-iMR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoG-oZ-1DX" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
                                                 <rect key="frame" x="631.5" y="8" width="150" height="110"/>
@@ -278,7 +232,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="NSLogFille" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxs-q7-sZN"/>
+                                                    <action selector="gold" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4U-g1-Wls"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r51-zh-Hth" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -296,7 +250,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="LiteUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiv-yI-y8C"/>
+                                                    <action selector="brighter" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXC-JG-lCC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfK-pa-Agc" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -317,7 +271,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="colorFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fE-is-taG"/>
+                                                    <action selector="colorIncrease" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOv-Vn-jeg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-2V-6ge" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -338,7 +292,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="makkurokurosuke" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFn-c0-ege"/>
+                                                    <action selector="whiteAndBlack" destination="BYZ-38-t0r" eventType="touchUpInside" id="DuT-yI-roS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R10-fp-Kcs" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -356,7 +310,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="ddda" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIP-B8-JY4"/>
+                                                    <action selector="screenBreaker" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Mv-0P-bvg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJC-nS-zx7" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -374,7 +328,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="gis" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNA-hK-8dG"/>
+                                                    <action selector="pink" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfo-f3-MzE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-Fs-09a" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -395,7 +349,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="sekand" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbL-Nd-aM5"/>
+                                                    <action selector="falseColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="J71-cG-DtZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B45-MX-OPI" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -413,7 +367,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="kaosssss" destination="BYZ-38-t0r" eventType="touchUpInside" id="1i3-Fb-LhQ"/>
+                                                    <action selector="purple" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPE-D2-n02"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27o-qN-GKP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -431,7 +385,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="exz" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTd-cN-tVf"/>
+                                                    <action selector="size" destination="BYZ-38-t0r" eventType="touchUpInside" id="70e-b9-4aW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-Xw-hjP" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -449,7 +403,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxO-ix-F3W"/>
+                                                    <action selector="contrast" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzh-Lx-Gvz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN7-Vf-f7z" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -467,7 +421,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="inputbox" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxR-nM-D3n"/>
+                                                    <action selector="flaseColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXz-7H-ex4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAF-W8-2Yn" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -485,7 +439,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="yyayayyayayayyayayayayayayahahhahhahhahhahahhaahhahahahahahhahahahahhahah" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fnp-FE-4z1"/>
+                                                    <action selector="greenKyouchou" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqa-Vc-fhj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtd-bD-BU2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -503,7 +457,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="hahhahhaha" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWT-bq-Y0D"/>
+                                                    <action selector="yellowPurple" destination="BYZ-38-t0r" eventType="touchUpInside" id="ip8-1x-eio"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-0P-A1M" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -521,7 +475,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="LiteDown" destination="BYZ-38-t0r" eventType="touchUpInside" id="85R-pP-mwA"/>
+                                                    <action selector="darker" destination="BYZ-38-t0r" eventType="touchUpInside" id="EiU-Tu-4Xg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV6-Qn-NXz" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -539,7 +493,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="msgbox" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkL-iR-fhl"/>
+                                                    <action selector="purpleKyouchou" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3E-K0-fLV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-Ri-0bO" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -557,7 +511,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="cvb" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ7-Fh-sWy"/>
+                                                    <action selector="enogu" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsc-2C-1Jh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-On-nq2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -575,7 +529,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="sikisaituyoi" destination="BYZ-38-t0r" eventType="touchUpInside" id="UID-uz-Q4w"/>
+                                                    <action selector="sawayaka" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUV-BO-OrA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-hw-yLa" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -593,7 +547,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="gsrgsr" destination="BYZ-38-t0r" eventType="touchUpInside" id="3TU-6e-gVM"/>
+                                                    <action selector="orange" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVK-eg-5Eb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-iz-CuE" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -611,7 +565,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="JetStaraaaaaaaaa" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWI-cL-syj"/>
+                                                    <action selector="red" destination="BYZ-38-t0r" eventType="touchUpInside" id="0r5-2B-vqO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-4X-sm2" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
@@ -629,7 +583,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="hahhhhhhahhhahhahahahah" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pf-q3-Upa"/>
+                                                    <action selector="blur" destination="BYZ-38-t0r" eventType="touchUpInside" id="elr-gB-Heo"/>
                                                 </connections>
                                             </button>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-0.5" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="UfL-qJ-5MA">
@@ -639,11 +593,11 @@
                                                     <constraint firstAttribute="width" secondItem="UfL-qJ-5MA" secondAttribute="height" multiplier="31:5" id="oqN-Ql-bao"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="SK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taJ-dG-4Jz"/>
+                                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q59-QY-NJe"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="n5G-Ux-fow" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="0g4-PN-QnG"/>
                                             <constraint firstItem="fYD-Xw-hjP" firstAttribute="top" secondItem="5lM-pG-ylY" secondAttribute="top" constant="8" id="0pw-Fd-EtP"/>
@@ -738,7 +692,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uF9-ti-kiI">
                                 <rect key="frame" x="0.0" y="483" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.43638681994818651" green="0.041902702861333831" blue="0.048261627851477931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.89736357600319461" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py3-7t-kT6">
                                 <rect key="frame" x="313" y="489" width="45" height="45"/>
@@ -761,7 +715,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="back_Back.png"/>
                                 <connections>
-                                    <action selector="homes" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFH-k4-tKz"/>
+                                    <action selector="homes" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4c-UF-1uG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -780,47 +734,6 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
-        <!--City View Controller-->
-        <scene sceneID="jgq-jN-6x4">
-            <objects>
-                <viewController storyboardIdentifier="nextView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O0U-Dq-nab" customClass="CityViewController" customModule="PhotoXF" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Mjg-BI-R1g"/>
-                        <viewControllerLayoutGuide type="bottom" id="1qk-FG-DJA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qZt-TS-tBF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-zK-H9o">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="              Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVh-nl-8aD">
-                                <rect key="frame" x="74" y="314" width="227" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rainbow.png" translatesAutoresizingMaskIntoConstraints="NO" id="TIr-1S-wmh">
-                                <rect key="frame" x="249" y="323" width="22" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="DiffelentImageView" destination="TIr-1S-wmh" id="jON-ab-AbF"/>
-                        <segue destination="edj-u9-5aS" kind="show" identifier="ahiru" id="wre-Dw-cne"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BHB-KH-fea" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4458" y="865"/>
-        </scene>
         <!--Stamp View Controller-->
         <scene sceneID="X7k-9R-cLC">
             <objects>
@@ -834,14 +747,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6P1-Uy-WQc">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="613" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.90413529800000003" blue="0.1662026962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FGa-Fb-vBg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.78945252089999995" green="0.94572155219999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="08S-mu-xSO">
                                     <size key="itemSize" width="168" height="159"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -870,11 +783,11 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW8-h8-jnh" customClass="Button_Custom" customModule="PhotoXF" customModuleProvider="target">
-                                <rect key="frame" x="155" y="621" width="65" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="0.6141995716737636" blue="0.6547696662410003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="155" y="619" width="65" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90009528398513794" green="0.14199092984199524" blue="0.33093667030334473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="戻る">
-                                    <color key="titleColor" red="0.61534569300518127" green="0.0" blue="0.042771002558551027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -891,7 +804,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qs-q8-nCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874" y="964"/>
+            <point key="canvasLocation" x="33" y="1519"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="qs3-JK-MnH">
@@ -1212,7 +1125,6 @@
         <!--New View Controller-->
         <scene sceneID="b47-No-13W">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcm-4L-Usl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="6Tu-AW-TVg" customClass="NewViewController" customModule="PhotoXF" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ngf-aP-hi1"/>
@@ -1223,18 +1135,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-ZI-Lxr">
-                                <rect key="frame" x="0.0" y="598" width="375" height="69"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="tZG-g6-V0q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90413529800000003" blue="0.1662026962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUm-zk-vjT">
                                 <rect key="frame" x="97" y="605" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="aajs.png"/>
                                 <connections>
                                     <action selector="camera" destination="6Tu-AW-TVg" eventType="touchUpInside" id="q7U-JG-sJs"/>
@@ -1242,7 +1149,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSI-w3-Jkq">
                                 <rect key="frame" x="223" y="605" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="DNS.png"/>
                                 <connections>
                                     <action selector="deleteTapped:" destination="6Tu-AW-TVg" eventType="touchUpInside" id="egE-qp-h7n"/>
@@ -1250,7 +1157,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKg-7z-BoT">
                                 <rect key="frame" x="160" y="605" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="Stampred.png"/>
                                 <connections>
                                     <segue destination="ekP-sd-LMf" kind="show" id="ujb-Jn-bCY"/>
@@ -1258,7 +1165,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-y0-ur0">
                                 <rect key="frame" x="286" y="605" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="Copy.png"/>
                                 <connections>
                                     <action selector="sns" destination="6Tu-AW-TVg" eventType="touchUpInside" id="DO6-60-faM"/>
@@ -1266,12 +1173,16 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GT6-90-YxX">
                                 <rect key="frame" x="34" y="605" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="back_Back.png"/>
                                 <connections>
                                     <action selector="Back" destination="6Tu-AW-TVg" eventType="touchUpInside" id="BUp-hI-ujb"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="tZG-g6-V0q">
+                                <rect key="frame" x="0.0" y="8" width="375" height="597"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1279,8 +1190,9 @@
                         <outlet property="imageView" destination="tZG-g6-V0q" id="G0H-sa-X65"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcm-4L-Usl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1466" y="1728"/>
+            <point key="canvasLocation" x="-874" y="1519"/>
         </scene>
     </scenes>
     <resources>
@@ -1305,7 +1217,6 @@
         <image name="hukidasi.png" width="500" height="499"/>
         <image name="kemuri.png" width="1216" height="1216"/>
         <image name="kibana.png" width="500" height="500"/>
-        <image name="rainbow.png" width="286" height="263"/>
         <image name="sakura.png" width="4224" height="2376"/>
         <image name="sakurabana.png" width="4224" height="2376"/>
         <image name="ごめん.png" width="1024" height="768"/>
