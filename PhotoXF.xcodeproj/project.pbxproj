@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B08CC751F64FF2300B2FFAD /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B08CC741F64FF2300B2FFAD /* Copy.png */; };
 		3B08CC771F6500DB00B2FFAD /* LAL.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B08CC761F6500DB00B2FFAD /* LAL.png */; };
+		3B11E4711FAECF520086A678 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B11E4701FAECF520086A678 /* icon.png */; };
 		3B19C6E41F6E781600E6C8B1 /* ターゲット2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6C61F6E781600E6C8B1 /* ターゲット2.png */; };
 		3B19C6E51F6E781600E6C8B1 /* ターゲット3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6C71F6E781600E6C8B1 /* ターゲット3.png */; };
 		3B19C6E61F6E781600E6C8B1 /* 思い出し1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B19C6C81F6E781600E6C8B1 /* 思い出し1.png */; };
@@ -101,7 +102,6 @@
 		3B99BB6B1F6E889800F791D4 /* StartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */; };
 		3B9F559A1EE26AA200D3B9A0 /* IMGA0004.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F55991EE26AA200D3B9A0 /* IMGA0004.png */; };
 		3BBA187B1EDA953600500632 /* Button_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA187A1EDA953600500632 /* Button_ViewController.swift */; };
-		3BBACB8E1F488247004468B5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BBACB8D1F488247004468B5 /* icon.png */; };
 		3BC388A91F0CDC77006C782C /* kibana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC388A81F0CDC77006C782C /* kibana.png */; };
 		3BC388AD1F0CDC80006C782C /* 星一つ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC388AA1F0CDC80006C782C /* 星一つ.png */; };
 		3BC39B731F64E53E00A9C8B0 /* SKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC39B721F64E53E00A9C8B0 /* SKViewController.swift */; };
@@ -135,7 +135,6 @@
 		3BDBFF061F6F59BD00F92898 /* 飛行機2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BDBFEED1F6F59BD00F92898 /* 飛行機2.png */; };
 		3BDBFF071F6F59BD00F92898 /* 対処.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BDBFEEE1F6F59BD00F92898 /* 対処.png */; };
 		3BDBFF081F6F59BD00F92898 /* お守り.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BDBFEEF1F6F59BD00F92898 /* お守り.png */; };
-		3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE278791EDAC807008E31A9 /* NextViewController.swift */; };
 		3BE480F01EE24D11002620CB /* くるくるEX.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE480EF1EE24D11002620CB /* くるくるEX.png */; };
 		3BF2DCB71F8B48380045FA74 /* Cammm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8501F81F8B09FB005BE42C /* Cammm.png */; };
 		3BF2DCB81F8B483C0045FA74 /* Stampred.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE76B221F8B18C30091036F /* Stampred.png */; };
@@ -161,6 +160,7 @@
 /* Begin PBXFileReference section */
 		3B08CC741F64FF2300B2FFAD /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Copy.png; sourceTree = "<group>"; };
 		3B08CC761F6500DB00B2FFAD /* LAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAL.png; sourceTree = "<group>"; };
+		3B11E4701FAECF520086A678 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3B19C6C61F6E781600E6C8B1 /* ターゲット2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ターゲット2.png"; sourceTree = "<group>"; };
 		3B19C6C71F6E781600E6C8B1 /* ターゲット3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ターゲット3.png"; sourceTree = "<group>"; };
 		3B19C6C81F6E781600E6C8B1 /* 思い出し1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "思い出し1.png"; sourceTree = "<group>"; };
@@ -259,7 +259,6 @@
 		3B99BB6A1F6E889800F791D4 /* StartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartedViewController.swift; sourceTree = "<group>"; };
 		3B9F55991EE26AA200D3B9A0 /* IMGA0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMGA0004.png; sourceTree = "<group>"; };
 		3BBA187A1EDA953600500632 /* Button_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button_ViewController.swift; sourceTree = "<group>"; };
-		3BBACB8D1F488247004468B5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3BC388A81F0CDC77006C782C /* kibana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kibana.png; sourceTree = "<group>"; };
 		3BC388AA1F0CDC80006C782C /* 星一つ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星一つ.png"; sourceTree = "<group>"; };
 		3BC39B721F64E53E00A9C8B0 /* SKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewController.swift; sourceTree = "<group>"; };
@@ -293,7 +292,6 @@
 		3BDBFEED1F6F59BD00F92898 /* 飛行機2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛行機2.png"; sourceTree = "<group>"; };
 		3BDBFEEE1F6F59BD00F92898 /* 対処.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "対処.png"; sourceTree = "<group>"; };
 		3BDBFEEF1F6F59BD00F92898 /* お守り.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "お守り.png"; sourceTree = "<group>"; };
-		3BE278791EDAC807008E31A9 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		3BE480EF1EE24D11002620CB /* くるくるEX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "くるくるEX.png"; sourceTree = "<group>"; };
 		3BE76B221F8B18C30091036F /* Stampred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stampred.png; sourceTree = "<group>"; };
 		3BF2DCB91F8B49EC0045FA74 /* back_Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_Back.png; sourceTree = "<group>"; };
@@ -327,7 +325,7 @@
 		3B6FC3401ED8126D00F37963 = {
 			isa = PBXGroup;
 			children = (
-				3BBACB8D1F488247004468B5 /* icon.png */,
+				3B11E4701FAECF520086A678 /* icon.png */,
 				3B6FC34B1ED8126D00F37963 /* PhotoXF */,
 				3B6FC3601ED8126E00F37963 /* PhotoXFTests */,
 				3B6FC36B1ED8126E00F37963 /* PhotoXFUITests */,
@@ -448,7 +446,6 @@
 				3B2AC08F1EDA994E00B8E10B /* キラキラ.png */,
 				3B2AC0901EDA994E00B8E10B /* ビックリマーク.png */,
 				3B2AC0911EDA994E00B8E10B /* 電球.png */,
-				3BE278791EDAC807008E31A9 /* NextViewController.swift */,
 				3B7D5E621F5A8B38006779FD /* AKASViewController.swift */,
 				3BC39B721F64E53E00A9C8B0 /* SKViewController.swift */,
 				3B8746F11F6D628D00BEC9BF /* NewViewController.swift */,
@@ -687,7 +684,6 @@
 				3B2AC0921EDA994E00B8E10B /* hatena.png in Resources */,
 				3B2AC0981EDA994E00B8E10B /* ビックリマーク.png in Resources */,
 				3B940C9A1F8C7047007F0055 /* １１.JPG in Resources */,
-				3BBACB8E1F488247004468B5 /* icon.png in Resources */,
 				3B19C6F71F6E781600E6C8B1 /* 傘4.png in Resources */,
 				3B91BAFA1F8B5FEE0045FC89 /* back_Back.png in Resources */,
 				3B940C9E1F8C7047007F0055 /* １５.JPG in Resources */,
@@ -730,6 +726,7 @@
 				3B940C991F8C703C007F0055 /* １０.JPG in Resources */,
 				3B940CA71F8C7047007F0055 /* ２４.JPG in Resources */,
 				3B940C9B1F8C7047007F0055 /* １２.JPG in Resources */,
+				3B11E4711FAECF520086A678 /* icon.png in Resources */,
 				3BC388AD1F0CDC80006C782C /* 星一つ.png in Resources */,
 				3BDBFF031F6F59BD00F92898 /* 地球2.png in Resources */,
 				3B2AC0931EDA994E00B8E10B /* hibi.png in Resources */,
@@ -761,7 +758,6 @@
 				3B6FC34F1ED8126D00F37963 /* ViewController.swift in Sources */,
 				3B1EA2401F6DD6CA0076A832 /* StampViewController.swift in Sources */,
 				3B8746F21F6D628D00BEC9BF /* NewViewController.swift in Sources */,
-				3BE2787A1EDAC807008E31A9 /* NextViewController.swift in Sources */,
 				3B99BB6B1F6E889800F791D4 /* StartedViewController.swift in Sources */,
 				3BBA187B1EDA953600500632 /* Button_ViewController.swift in Sources */,
 				3B1EA2421F6DFD700076A832 /* StampTeste.swift in Sources */,

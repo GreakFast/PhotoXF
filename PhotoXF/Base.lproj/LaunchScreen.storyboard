@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.78945252089999995" green="0.94572155219999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.90413529800000003" blue="0.1662026962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -44,4 +44,5 @@
     <resources>
         <image name="CamSD.png" width="500" height="500"/>
     </resources>
+    <color key="tintColor" red="1" green="0.6917105188280086" blue="0.70068768928040581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

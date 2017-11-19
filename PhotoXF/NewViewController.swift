@@ -20,7 +20,6 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         }
     }
 
-    
     @IBAction func camera() {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let picker = UIImagePickerController()
@@ -42,10 +41,8 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
     @IBAction func Back() {
         self.dismiss(animated: true, completion: nil)
-
-        
-
     }
+    
     @IBAction func sns() {
         UIGraphicsBeginImageContextWithOptions(self.imageView.frame.size, self.view.isOpaque, 0.0)
         self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -54,22 +51,21 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         UIImageWriteToSavedPhotosAlbum(savedImage!, self, nil, nil)
         
         let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
-        
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
             (action: UIAlertAction!) -> Void in
             print("OK")
         })
         alert.addAction(defaultAction)
-        
         present(alert, animated: true, completion: nil)
-
     }
+    
     @IBAction func deleteTapped(_ sender:AnyObject) {
         let subView = self.view.subviews.last!
         if subView.isKind(of: Stamp.self) {
             subView.removeFromSuperview()
         }
     }
+    
     @IBAction func das() {
         UIGraphicsBeginImageContextWithOptions(self.imageView.frame.size, self.view.isOpaque, 0.0)
         self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -78,28 +74,24 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         UIImageWriteToSavedPhotosAlbum(savedImage!, self, nil, nil)
         
         let alert: UIAlertController = UIAlertController(title: "保存", message: "保存が完了しました。", preferredStyle:  UIAlertControllerStyle.alert)
-        
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
             (action: UIAlertAction!) -> Void in
             print("OK")
         })
         alert.addAction(defaultAction)
-        
         present(alert, animated: true, completion: nil)
-
     }
-
+    
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
 }

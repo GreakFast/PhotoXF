@@ -36,7 +36,7 @@ class SKViewController: UIViewController, UIImagePickerControllerDelegate, UINav
             picker.allowsEditing = true
             present(picker, animated: true, completion: nil)
         } else {
-            let alert: UIAlertController = UIAlertController(title: "エラー", message: "エラー：カメラにアクセスができませんでした。破損の可能性があります。", preferredStyle:  UIAlertControllerStyle.alert)
+            let alert: UIAlertController = UIAlertController(title: "カメラ", message: "エラー：カメラにアクセスできませんでした", preferredStyle:  UIAlertControllerStyle.alert)
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
                 (action: UIAlertAction!) -> Void in
                 print("OK")
@@ -77,7 +77,6 @@ class SKViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
