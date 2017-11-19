@@ -13,7 +13,7 @@ class StartedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+        @IBAction func Start(segue: UIStoryboardSegue) {}
 
         // Do any additional setup after loading the view.
 

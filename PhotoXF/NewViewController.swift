@@ -82,7 +82,7 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         present(alert, animated: true, completion: nil)
     }
     
-
+    @IBAction func StampBack(segue: UIStoryboardSegue) {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
